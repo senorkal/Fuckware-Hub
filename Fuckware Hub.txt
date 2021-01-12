@@ -540,7 +540,7 @@ Credits.Font = Enum.Font.GothamBlack
 Credits.Text = "Made by senorkal. Script creators are credit on their belonging script."
 Credits.TextColor3 = Color3.fromRGB(255, 255, 255)
 Credits.TextScaled = true
-Credits.TextSize = 12.000
+Credits.TextSize = 15.000
 Credits.TextWrapped = true
 
 FE_Scripts_2.Name = "FE_Scripts"
