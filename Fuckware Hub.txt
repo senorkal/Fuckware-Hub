@@ -1,7 +1,7 @@
--- Gui to Lua
--- Version: 3.2
-
--- Instances:
+--[[
+Made by senorkal.
+ALL SCRIPTS ARE NOT MINE AND THEY ARE MOSTLY CREDITED
+]]--
 
 local FuckwareHub = Instance.new("ScreenGui")
 local Core = Instance.new("Frame")
@@ -16,15 +16,15 @@ local Name_2 = Instance.new("TextLabel")
 local FE_Scripts = Instance.new("TextButton")
 local Background_3 = Instance.new("ImageLabel")
 local Name_3 = Instance.new("TextLabel")
-local About = Instance.new("TextButton")
+local CreditsMenu = Instance.new("TextButton")
 local Background_4 = Instance.new("ImageLabel")
 local Name_4 = Instance.new("TextLabel")
 local Menu = Instance.new("Frame")
 local Background_5 = Instance.new("ImageLabel")
-local About_2 = Instance.new("Frame")
-local AboutDesc = Instance.new("TextLabel")
-local AboutName = Instance.new("TextLabel")
-local AboutCreds = Instance.new("TextLabel")
+local CreditsMenu_2 = Instance.new("Frame")
+local CreditsDesc = Instance.new("TextLabel")
+local CreditsName = Instance.new("TextLabel")
+local Credits = Instance.new("TextLabel")
 local FE_Scripts_2 = Instance.new("ScrollingFrame")
 local FE_Building = Instance.new("Frame")
 local ScriptName = Instance.new("TextLabel")
@@ -212,7 +212,7 @@ Games.TextSize = 14.000
 Games.MouseButton1Down:Connect(function()
 	local targetGUI = Games_2
 	local GUItoClose1 = FE_Scripts_2
-	local GUItoClose2 = About_2
+	local GUItoClose2 = CreditsMenu_2
 	local GUItoClose3 = Hubs_2
 
 	if Category.Value == 2 == false then
@@ -281,7 +281,7 @@ Hubs.TextSize = 14.000
 Hubs.MouseButton1Down:Connect(function()
 	local targetGUI = Hubs.Parent.Parent.Menu.Hubs
 	local GUItoClose1 = FE_Scripts_2
-	local GUItoClose2 = About_2
+	local GUItoClose2 = CreditsMenu_2
 	local GUItoClose3 = Games_2
 
 	if Category.Value == 1 == false then
@@ -351,7 +351,7 @@ FE_Scripts.TextSize = 14.000
 
 FE_Scripts.MouseButton1Down:Connect(function()
 	local targetGUI = FE_Scripts.Parent.Parent.Menu.FE_Scripts
-	local GUItoClose1 = About_2
+	local GUItoClose1 = CreditsMenu_2
 	local GUItoClose2 = Games_2
 	local GUItoClose3 = Hubs_2
 
@@ -408,19 +408,19 @@ Name_3.TextColor3 = Color3.fromRGB(255, 255, 255)
 Name_3.TextSize = 18.000
 Name_3.TextWrapped = true
 
-About.Name = "About"
-About.Parent = Categories
-About.BackgroundColor3 = Color3.fromRGB(80, 80, 80)
-About.BackgroundTransparency = 1.000
-About.BorderSizePixel = 0
-About.Position = UDim2.new(-0.00200000009, 0, 0.648000002, 0)
-About.Size = UDim2.new(0, 109, 0, 23)
-About.Font = Enum.Font.SourceSansBold
-About.TextColor3 = Color3.fromRGB(0, 0, 0)
-About.TextSize = 14.000
+CreditsMenu.Name = "CreditsMenu"
+CreditsMenu.Parent = Categories
+CreditsMenu.BackgroundColor3 = Color3.fromRGB(80, 80, 80)
+CreditsMenu.BackgroundTransparency = 1.000
+CreditsMenu.BorderSizePixel = 0
+CreditsMenu.Position = UDim2.new(-0.00200000009, 0, 0.648000002, 0)
+CreditsMenu.Size = UDim2.new(0, 109, 0, 23)
+CreditsMenu.Font = Enum.Font.SourceSansBold
+CreditsMenu.TextColor3 = Color3.fromRGB(0, 0, 0)
+CreditsMenu.TextSize = 14.000
 
-About.MouseButton1Down:Connect(function()
-	local targetGUI = About_2
+CreditsMenu.MouseButton1Down:Connect(function()
+	local targetGUI = CreditsMenu_2
 	local GUItoClose1 = FE_Scripts_2
 	local GUItoClose2 = Games_2
 	local GUItoClose3 = Hubs_2
@@ -452,7 +452,7 @@ end)
 
 
 Background_4.Name = "Background"
-Background_4.Parent = About
+Background_4.Parent = CreditsMenu
 Background_4.Active = true
 Background_4.AnchorPoint = Vector2.new(0.5, 0.5)
 Background_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -467,13 +467,13 @@ Background_4.SliceCenter = Rect.new(100, 100, 100, 100)
 Background_4.SliceScale = 0.050
 
 Name_4.Name = "Name"
-Name_4.Parent = About
+Name_4.Parent = CreditsMenu
 Name_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Name_4.BackgroundTransparency = 1.000
 Name_4.Position = UDim2.new(0, 0, -0.0970000029, 0)
 Name_4.Size = UDim2.new(0, 109, 0, 27)
 Name_4.Font = Enum.Font.GothamSemibold
-Name_4.Text = "About"
+Name_4.Text = "Credits"
 Name_4.TextColor3 = Color3.fromRGB(255, 255, 255)
 Name_4.TextScaled = true
 Name_4.TextSize = 14.000
@@ -498,50 +498,50 @@ Background_5.ScaleType = Enum.ScaleType.Slice
 Background_5.SliceCenter = Rect.new(100, 100, 100, 100)
 Background_5.SliceScale = 0.050
 
-About_2.Name = "About"
-About_2.Parent = Menu
-About_2.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
-About_2.Size = UDim2.new(0, 312, 0, 201)
-About_2.Visible = false
+CreditsMenu_2.Name = "CreditsMenu"
+CreditsMenu_2.Parent = Menu
+CreditsMenu_2.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+CreditsMenu_2.Size = UDim2.new(0, 312, 0, 201)
+CreditsMenu_2.Visible = false
 
-AboutDesc.Name = "AboutDesc"
-AboutDesc.Parent = About_2
-AboutDesc.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-AboutDesc.BackgroundTransparency = 1.000
-AboutDesc.Position = UDim2.new(0.0283333212, 0, 0.142822802, 0)
-AboutDesc.Size = UDim2.new(0, 297, 0, 58)
-AboutDesc.Font = Enum.Font.GothamBlack
-AboutDesc.Text = "Fuckware Hub is a script hub packed with my favorite scripts. All these scripts in this own hub I made. This Hub is in status of WIP so I might add more scripts."
-AboutDesc.TextColor3 = Color3.fromRGB(255, 255, 255)
-AboutDesc.TextSize = 12.000
-AboutDesc.TextWrapped = true
-AboutDesc.TextXAlignment = Enum.TextXAlignment.Left
-AboutDesc.TextYAlignment = Enum.TextYAlignment.Top
+CreditsDesc.Name = "CreditsDesc"
+CreditsDesc.Parent = Credits_2
+CreditsDesc.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CreditsDesc.BackgroundTransparency = 1.000
+CreditsDesc.Position = UDim2.new(0.0283333212, 0, 0.142822802, 0)
+CreditsDesc.Size = UDim2.new(0, 297, 0, 58)
+CreditsDesc.Font = Enum.Font.GothamBlack
+CreditsDesc.Text = "Fuckware Hub is a script hub packed with my favorite scripts. All these scripts in this own hub I made. This Hub is in status of WIP so I might add more scripts."
+CreditsDesc.TextColor3 = Color3.fromRGB(255, 255, 255)
+CreditsDesc.TextSize = 12.000
+CreditsDesc.TextWrapped = true
+CreditsDesc.TextXAlignment = Enum.TextXAlignment.Left
+CreditsDesc.TextYAlignment = Enum.TextYAlignment.Top
 
-AboutName.Name = "AboutName"
-AboutName.Parent = About_2
-AboutName.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-AboutName.BackgroundTransparency = 1.000
-AboutName.Position = UDim2.new(-0.00192307122, 0, -0.0388973914, 0)
-AboutName.Size = UDim2.new(0, 100, 0, 49)
-AboutName.Font = Enum.Font.GothamBlack
-AboutName.Text = "Fuckware Hub"
-AboutName.TextColor3 = Color3.fromRGB(255, 255, 255)
-AboutName.TextSize = 14.000
-AboutName.TextWrapped = true
+CreditsName.Name = "CreditsName"
+CreditsName.Parent = CreditsMenu_2
+CreditsName.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CreditsName.BackgroundTransparency = 1.000
+CreditsName.Position = UDim2.new(-0.00192307122, 0, -0.0388973914, 0)
+CreditsName.Size = UDim2.new(0, 100, 0, 49)
+CreditsName.Font = Enum.Font.GothamBlack
+CreditsName.Text = "Fuckware Hub"
+CreditsName.TextColor3 = Color3.fromRGB(255, 255, 255)
+CreditsName.TextSize = 14.000
+CreditsName.TextWrapped = true
 
-AboutCreds.Name = "AboutCreds"
-AboutCreds.Parent = About_2
-AboutCreds.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-AboutCreds.BackgroundTransparency = 1.000
-AboutCreds.Position = UDim2.new(0.278333217, 0, 0.565708399, 0)
-AboutCreds.Size = UDim2.new(0, 138, 0, 17)
-AboutCreds.Font = Enum.Font.GothamBlack
-AboutCreds.Text = "Made by senorkal."
-AboutCreds.TextColor3 = Color3.fromRGB(255, 255, 255)
-AboutCreds.TextScaled = true
-AboutCreds.TextSize = 12.000
-AboutCreds.TextWrapped = true
+Credits.Name = "Credits"
+Credits.Parent = CreditsMenu_2
+Credits.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Credits.BackgroundTransparency = 1.000
+Credits.Position = UDim2.new(0.278333217, 0, 0.565708399, 0)
+Credits.Size = UDim2.new(0, 138, 0, 17)
+Credits.Font = Enum.Font.GothamBlack
+Credits.Text = "Made by senorkal. Script creators are credit on their belonging script."
+Credits.TextColor3 = Color3.fromRGB(255, 255, 255)
+Creditss.TextScaled = true
+Credits.TextSize = 11.300
+Credits.TextWrapped = true
 
 FE_Scripts_2.Name = "FE_Scripts"
 FE_Scripts_2.Parent = Menu
@@ -725,9 +725,9 @@ ScriptName_3.BackgroundTransparency = 1.000
 ScriptName_3.Position = UDim2.new(-0.00999999978, 0, 0.0514285862, 0)
 ScriptName_3.Size = UDim2.new(0, 100, 0, 38)
 ScriptName_3.Font = Enum.Font.GothamBlack
-ScriptName_3.Text = "FE Stand"
+ScriptName_3.Text = "FE Stand (Dark Crusader Hat)"
 ScriptName_3.TextColor3 = Color3.fromRGB(255, 255, 255)
-ScriptName_3.TextSize = 14.000
+ScriptName_3.TextSize = 13.500
 ScriptName_3.TextWrapped = true
 
 Execute_3.Name = "Execute"
