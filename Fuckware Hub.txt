@@ -505,7 +505,7 @@ CreditsMenu_2.Size = UDim2.new(0, 312, 0, 201)
 CreditsMenu_2.Visible = false
 
 CreditsDesc.Name = "CreditsDesc"
-CreditsDesc.Parent = Credits_2
+CreditsDesc.Parent = CreditsMenu_2
 CreditsDesc.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 CreditsDesc.BackgroundTransparency = 1.000
 CreditsDesc.Position = UDim2.new(0.0283333212, 0, 0.142822802, 0)
