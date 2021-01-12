@@ -539,7 +539,7 @@ Credits.Size = UDim2.new(0, 138, 0, 17)
 Credits.Font = Enum.Font.GothamBlack
 Credits.Text = "Made by senorkal. Script creators are credit on their belonging script."
 Credits.TextColor3 = Color3.fromRGB(255, 255, 255)
-Creditss.TextScaled = true
+Credits.TextScaled = true
 Credits.TextSize = 11.300
 Credits.TextWrapped = true
 
