@@ -1,0 +1,2247 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local FuckwareHub = Instance.new("ScreenGui")
+local Core = Instance.new("Frame")
+local Main = Instance.new("Frame")
+local Categories = Instance.new("Frame")
+local Games = Instance.new("TextButton")
+local Background = Instance.new("ImageLabel")
+local Name = Instance.new("TextLabel")
+local Hubs = Instance.new("TextButton")
+local Background_2 = Instance.new("ImageLabel")
+local Name_2 = Instance.new("TextLabel")
+local FE_Scripts = Instance.new("TextButton")
+local Background_3 = Instance.new("ImageLabel")
+local Name_3 = Instance.new("TextLabel")
+local About = Instance.new("TextButton")
+local Background_4 = Instance.new("ImageLabel")
+local Name_4 = Instance.new("TextLabel")
+local Menu = Instance.new("Frame")
+local Background_5 = Instance.new("ImageLabel")
+local About_2 = Instance.new("Frame")
+local AboutDesc = Instance.new("TextLabel")
+local AboutName = Instance.new("TextLabel")
+local AboutCreds = Instance.new("TextLabel")
+local FE_Scripts_2 = Instance.new("ScrollingFrame")
+local FE_Building = Instance.new("Frame")
+local ScriptName = Instance.new("TextLabel")
+local Execute = Instance.new("TextButton")
+local BG = Instance.new("ImageLabel")
+local ExecuteText = Instance.new("TextLabel")
+local Credit = Instance.new("TextLabel")
+local FE_Penis = Instance.new("Frame")
+local ScriptName_2 = Instance.new("TextLabel")
+local Execute_2 = Instance.new("TextButton")
+local BG_2 = Instance.new("ImageLabel")
+local ExecuteText_2 = Instance.new("TextLabel")
+local Credit_2 = Instance.new("TextLabel")
+local FE_Stand = Instance.new("Frame")
+local ScriptName_3 = Instance.new("TextLabel")
+local Execute_3 = Instance.new("TextButton")
+local BG_3 = Instance.new("ImageLabel")
+local ExecuteText_3 = Instance.new("TextLabel")
+local Credit_3 = Instance.new("TextLabel")
+local FencingRepUI = Instance.new("Frame")
+local ScriptName_4 = Instance.new("TextLabel")
+local Execute_4 = Instance.new("TextButton")
+local BG_4 = Instance.new("ImageLabel")
+local ExecuteText_4 = Instance.new("TextLabel")
+local Credit_4 = Instance.new("TextLabel")
+local LineBorder1 = Instance.new("Frame")
+local LineBorder2 = Instance.new("Frame")
+local NeptunianV = Instance.new("Frame")
+local ScriptName_5 = Instance.new("TextLabel")
+local Execute_5 = Instance.new("TextButton")
+local BG_5 = Instance.new("ImageLabel")
+local ExecuteText_5 = Instance.new("TextLabel")
+local Credit_5 = Instance.new("TextLabel")
+local NeptunianV_v2 = Instance.new("Frame")
+local ScriptName_6 = Instance.new("TextLabel")
+local Execute_6 = Instance.new("TextButton")
+local BG_6 = Instance.new("ImageLabel")
+local ExecuteText_6 = Instance.new("TextLabel")
+local Credit_6 = Instance.new("TextLabel")
+local SlashKill = Instance.new("Frame")
+local ScriptName_7 = Instance.new("TextLabel")
+local Execute_7 = Instance.new("TextButton")
+local BG_7 = Instance.new("ImageLabel")
+local ExecuteText_7 = Instance.new("TextLabel")
+local Credit_7 = Instance.new("TextLabel")
+local VRWithoutHeadset = Instance.new("Frame")
+local ScriptName_8 = Instance.new("TextLabel")
+local Execute_8 = Instance.new("TextButton")
+local BG_8 = Instance.new("ImageLabel")
+local ExecuteText_8 = Instance.new("TextLabel")
+local Credit_8 = Instance.new("TextLabel")
+local WalkOnWalls = Instance.new("Frame")
+local ScriptName_9 = Instance.new("TextLabel")
+local Execute_9 = Instance.new("TextButton")
+local BG_9 = Instance.new("ImageLabel")
+local ExecuteText_9 = Instance.new("TextLabel")
+local Credit_9 = Instance.new("TextLabel")
+local Games_2 = Instance.new("ScrollingFrame")
+local Arsenal = Instance.new("Frame")
+local Icon = Instance.new("ImageLabel")
+local ScriptName_10 = Instance.new("TextLabel")
+local Execute_10 = Instance.new("TextButton")
+local BG_10 = Instance.new("ImageLabel")
+local ExecuteText_10 = Instance.new("TextLabel")
+local AutoRapBattles = Instance.new("Frame")
+local Icon_2 = Instance.new("ImageLabel")
+local ScriptName_11 = Instance.new("TextLabel")
+local Execute_11 = Instance.new("TextButton")
+local BG_11 = Instance.new("ImageLabel")
+local ExecuteText_11 = Instance.new("TextLabel")
+local BubbleGumSim = Instance.new("Frame")
+local Icon_3 = Instance.new("ImageLabel")
+local ScriptName_12 = Instance.new("TextLabel")
+local Execute_12 = Instance.new("TextButton")
+local BG_12 = Instance.new("ImageLabel")
+local ExecuteText_12 = Instance.new("TextLabel")
+local Jailbreak = Instance.new("Frame")
+local Icon_4 = Instance.new("ImageLabel")
+local ScriptName_13 = Instance.new("TextLabel")
+local Execute_v1 = Instance.new("TextButton")
+local BG_13 = Instance.new("ImageLabel")
+local ExecuteText_13 = Instance.new("TextLabel")
+local Execute_v2 = Instance.new("TextButton")
+local BG_14 = Instance.new("ImageLabel")
+local ExecuteText_14 = Instance.new("TextLabel")
+local KAT = Instance.new("Frame")
+local Icon_5 = Instance.new("ImageLabel")
+local ScriptName_14 = Instance.new("TextLabel")
+local Execute_v1_2 = Instance.new("TextButton")
+local BG_15 = Instance.new("ImageLabel")
+local ExecuteText_15 = Instance.new("TextLabel")
+local Execute_v2_2 = Instance.new("TextButton")
+local BG_16 = Instance.new("ImageLabel")
+local ExecuteText_16 = Instance.new("TextLabel")
+local LineBorder1_2 = Instance.new("Frame")
+local LineBorder2_2 = Instance.new("Frame")
+local MM2 = Instance.new("Frame")
+local Icon_6 = Instance.new("ImageLabel")
+local ScriptName_15 = Instance.new("TextLabel")
+local Execute_13 = Instance.new("TextButton")
+local BG_17 = Instance.new("ImageLabel")
+local ExecuteText_17 = Instance.new("TextLabel")
+local PrisonLife = Instance.new("Frame")
+local Icon_7 = Instance.new("ImageLabel")
+local Execute_v1_3 = Instance.new("TextButton")
+local BG_18 = Instance.new("ImageLabel")
+local ExecuteText_18 = Instance.new("TextLabel")
+local Execute_v2_3 = Instance.new("TextButton")
+local BG_19 = Instance.new("ImageLabel")
+local ExecuteText_19 = Instance.new("TextLabel")
+local ScriptName_v1 = Instance.new("TextLabel")
+local ScriptName_v2 = Instance.new("TextLabel")
+local Hubs_2 = Instance.new("ScrollingFrame")
+local AncientHub = Instance.new("Frame")
+local Icon_8 = Instance.new("ImageLabel")
+local Execute_14 = Instance.new("TextButton")
+local BG_20 = Instance.new("ImageLabel")
+local ExecuteText_20 = Instance.new("TextLabel")
+local ScriptName_16 = Instance.new("TextLabel")
+local ScriptDesc = Instance.new("TextLabel")
+local LineBorder1_3 = Instance.new("Frame")
+local LineBorder2_3 = Instance.new("Frame")
+local LineBorder3 = Instance.new("Frame")
+local NullwareHub = Instance.new("Frame")
+local Icon_9 = Instance.new("ImageLabel")
+local Execute_15 = Instance.new("TextButton")
+local BG_21 = Instance.new("ImageLabel")
+local ExecuteText_21 = Instance.new("TextLabel")
+local ScriptName_17 = Instance.new("TextLabel")
+local ScriptDesc_2 = Instance.new("TextLabel")
+local OwlHub = Instance.new("Frame")
+local Icon_10 = Instance.new("ImageLabel")
+local Execute_16 = Instance.new("TextButton")
+local BG_22 = Instance.new("ImageLabel")
+local ExecuteText_22 = Instance.new("TextLabel")
+local ScriptName_18 = Instance.new("TextLabel")
+local ScriptDesc_3 = Instance.new("TextLabel")
+local MoreToCome = Instance.new("TextLabel")
+local Title = Instance.new("ImageLabel")
+local TitleName = Instance.new("TextLabel")
+local Toggle = Instance.new("TextButton")
+local Color = Instance.new("ImageLabel")
+local Category = Instance.new("IntValue")
+local Toggled = Instance.new("BoolValue")
+
+--Properties:
+
+FuckwareHub.Name = "Fuckware Hub"
+FuckwareHub.Parent = game.CoreGui
+
+Core.Name = "Core"
+Core.Parent = FuckwareHub
+Core.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Core.BackgroundTransparency = 1.000
+Core.Position = UDim2.new(0.274590164, 0, 0.262042403, 0)
+Core.Size = UDim2.new(0, 453, 0, 246)
+Core.Active = true
+Core.Selectable = true
+Core.Draggable = true
+
+Main.Name = "Main"
+Main.Parent = Core
+Main.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Main.Position = UDim2.new(-0.000690643676, 0, 0.00187979639, 0)
+Main.Size = UDim2.new(0, 453, 0, 246)
+Main.Style = Enum.FrameStyle.RobloxRound
+
+Categories.Name = "Categories"
+Categories.Parent = Main
+Categories.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Categories.BackgroundTransparency = 1.000
+Categories.Position = UDim2.new(0.000336097553, 0, 0.114125073, 0)
+Categories.Size = UDim2.new(0, 108, 0, 200)
+
+Games.Name = "Games"
+Games.Parent = Categories
+Games.BackgroundColor3 = Color3.fromRGB(80, 80, 80)
+Games.BackgroundTransparency = 1.000
+Games.BorderSizePixel = 0
+Games.Position = UDim2.new(-0.00170022249, 0, 0.047678683, 0)
+Games.Size = UDim2.new(0, 109, 0, 23)
+Games.Font = Enum.Font.SourceSansBold
+Games.TextColor3 = Color3.fromRGB(0, 0, 0)
+Games.TextSize = 14.000
+Games.MouseButton1Down:Connect(function()
+	local targetGUI = Games_2
+	local GUItoClose1 = FE_Scripts_2
+	local GUItoClose2 = About_2
+	local GUItoClose3 = Hubs_2
+
+	if Category.Value == 2 == false then
+		if targetGUI.Visible == false then
+			if GUItoClose1.Visible == false and GUItoClose2.Visible == false and GUItoClose3.Visible == false then
+				targetGUI.Visible = true
+				Category.Value = 2
+			elseif GUItoClose1.Visible == true or GUItoClose2.Visible == true or GUItoClose3.Visible == true then
+				GUItoClose1.Visible = false
+				GUItoClose2.Visible = false
+				GUItoClose3.Visible = false
+				targetGUI.Visible = true
+				Category.Value = 2
+			end
+		end
+	elseif Category.Value == 2 then
+		if GUItoClose1.Visible == false and GUItoClose2.Visible == false and GUItoClose3.Visible == false then
+			targetGUI.Visible = true
+		elseif GUItoClose1.Visible == true or GUItoClose2.Visible == true or GUItoClose3.Visible == true then
+			GUItoClose1.Visible = false
+			GUItoClose2.Visible = false
+			GUItoClose3.Visible = false
+			targetGUI.Visible = true
+		end
+	end
+end)
+
+Background.Name = "Background"
+Background.Parent = Games
+Background.Active = true
+Background.AnchorPoint = Vector2.new(0.5, 0.5)
+Background.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Background.BackgroundTransparency = 1.000
+Background.Position = UDim2.new(0.5, 0, 0.5, 0)
+Background.Selectable = true
+Background.Size = UDim2.new(1, 0, 1, 0)
+Background.Image = "rbxassetid://3570695787"
+Background.ImageColor3 = Color3.fromRGB(80, 80, 80)
+Background.ScaleType = Enum.ScaleType.Slice
+Background.SliceCenter = Rect.new(100, 100, 100, 100)
+Background.SliceScale = 0.050
+
+Name.Name = "Name"
+Name.Parent = Games
+Name.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Name.BackgroundTransparency = 1.000
+Name.Position = UDim2.new(0, 0, -0.0869565234, 0)
+Name.Size = UDim2.new(0, 109, 0, 27)
+Name.Font = Enum.Font.GothamSemibold
+Name.Text = "Games"
+Name.TextColor3 = Color3.fromRGB(255, 255, 255)
+Name.TextScaled = true
+Name.TextSize = 14.000
+Name.TextWrapped = true
+
+Hubs.Name = "Hubs"
+Hubs.Parent = Categories
+Hubs.BackgroundColor3 = Color3.fromRGB(80, 80, 80)
+Hubs.BackgroundTransparency = 1.000
+Hubs.BorderSizePixel = 0
+Hubs.Position = UDim2.new(-0.00200000009, 0, 0.247999996, 0)
+Hubs.Size = UDim2.new(0, 109, 0, 23)
+Hubs.Font = Enum.Font.SourceSansBold
+Hubs.TextColor3 = Color3.fromRGB(0, 0, 0)
+Hubs.TextSize = 14.000
+Hubs.MouseButton1Down:Connect(function()
+	local targetGUI = Hubs.Parent.Parent.Menu.Hubs
+	local GUItoClose1 = FE_Scripts_2
+	local GUItoClose2 = About_2
+	local GUItoClose3 = Games_2
+
+	if Category.Value == 1 == false then
+		if targetGUI.Visible == false then
+			if GUItoClose1.Visible == false and GUItoClose2.Visible == false and GUItoClose3.Visible == false then
+				targetGUI.Visible = true
+				Category.Value = 1
+			elseif GUItoClose1.Visible == true or GUItoClose2.Visible == true or GUItoClose3.Visible == true then
+				GUItoClose1.Visible = false
+				GUItoClose2.Visible = false
+				GUItoClose3.Visible = false
+				targetGUI.Visible = true
+				Category.Value = 1
+			end
+		end
+	elseif Category.Value == 1 then
+		if GUItoClose1.Visible == false and GUItoClose2.Visible == false and GUItoClose3.Visible == false then
+			targetGUI.Visible = true
+		elseif GUItoClose1.Visible == true or GUItoClose2.Visible == true or GUItoClose3.Visible == true then
+			GUItoClose1.Visible = false
+			GUItoClose2.Visible = false
+			GUItoClose3.Visible = false
+			targetGUI.Visible = true
+		end
+	end
+end)
+
+
+Background_2.Name = "Background"
+Background_2.Parent = Hubs
+Background_2.Active = true
+Background_2.AnchorPoint = Vector2.new(0.5, 0.5)
+Background_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Background_2.BackgroundTransparency = 1.000
+Background_2.Position = UDim2.new(0.5, 0, 0.5, 0)
+Background_2.Selectable = true
+Background_2.Size = UDim2.new(1, 0, 1, 0)
+Background_2.Image = "rbxassetid://3570695787"
+Background_2.ImageColor3 = Color3.fromRGB(80, 80, 80)
+Background_2.ScaleType = Enum.ScaleType.Slice
+Background_2.SliceCenter = Rect.new(100, 100, 100, 100)
+Background_2.SliceScale = 0.050
+
+Name_2.Name = "Name"
+Name_2.Parent = Hubs
+Name_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Name_2.BackgroundTransparency = 1.000
+Name_2.Position = UDim2.new(0, 0, -0.0970000029, 0)
+Name_2.Size = UDim2.new(0, 109, 0, 27)
+Name_2.Font = Enum.Font.GothamSemibold
+Name_2.Text = "Hubs"
+Name_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Name_2.TextScaled = true
+Name_2.TextSize = 14.000
+Name_2.TextWrapped = true
+
+FE_Scripts.Name = "FE_Scripts"
+FE_Scripts.Parent = Categories
+FE_Scripts.BackgroundColor3 = Color3.fromRGB(80, 80, 80)
+FE_Scripts.BackgroundTransparency = 1.000
+FE_Scripts.BorderSizePixel = 0
+FE_Scripts.Position = UDim2.new(-0.00200000009, 0, 0.448000014, 0)
+FE_Scripts.Size = UDim2.new(0, 109, 0, 23)
+FE_Scripts.Font = Enum.Font.SourceSansBold
+FE_Scripts.TextColor3 = Color3.fromRGB(0, 0, 0)
+FE_Scripts.TextSize = 14.000
+
+FE_Scripts.MouseButton1Down:Connect(function()
+	local targetGUI = FE_Scripts.Parent.Parent.Menu.FE_Scripts
+	local GUItoClose1 = About_2
+	local GUItoClose2 = Games_2
+	local GUItoClose3 = Hubs_2
+
+	if Category.Value == 3 == false then
+		if targetGUI.Visible == false then
+			if GUItoClose1.Visible == false and GUItoClose2.Visible == false and GUItoClose3.Visible == false then
+				targetGUI.Visible = true
+				Category.Value = 3
+			elseif GUItoClose1.Visible == true or GUItoClose2.Visible == true or GUItoClose3.Visible == true then
+				GUItoClose1.Visible = false
+				GUItoClose2.Visible = false
+				GUItoClose3.Visible = false
+				targetGUI.Visible = true
+				Category.Value = 3
+			end
+		end
+	elseif Category.Value == 3 then
+		if GUItoClose1.Visible == false and GUItoClose2.Visible == false and GUItoClose3.Visible == false then
+			targetGUI.Visible = true
+		elseif GUItoClose1.Visible == true or GUItoClose2.Visible == true or GUItoClose3.Visible == true then
+			GUItoClose1.Visible = false
+			GUItoClose2.Visible = false
+			GUItoClose3.Visible = false
+			targetGUI.Visible = true
+		end
+	end
+end)
+
+
+Background_3.Name = "Background"
+Background_3.Parent = FE_Scripts
+Background_3.Active = true
+Background_3.AnchorPoint = Vector2.new(0.5, 0.5)
+Background_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Background_3.BackgroundTransparency = 1.000
+Background_3.Position = UDim2.new(0.5, 0, 0.5, 0)
+Background_3.Selectable = true
+Background_3.Size = UDim2.new(1, 0, 1, 0)
+Background_3.Image = "rbxassetid://3570695787"
+Background_3.ImageColor3 = Color3.fromRGB(80, 80, 80)
+Background_3.ScaleType = Enum.ScaleType.Slice
+Background_3.SliceCenter = Rect.new(100, 100, 100, 100)
+Background_3.SliceScale = 0.050
+
+Name_3.Name = "Name"
+Name_3.Parent = FE_Scripts
+Name_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Name_3.BackgroundTransparency = 1.000
+Name_3.Position = UDim2.new(0, 0, -0.0970000029, 0)
+Name_3.Size = UDim2.new(0, 109, 0, 27)
+Name_3.Font = Enum.Font.GothamSemibold
+Name_3.Text = "FE Scripts"
+Name_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+Name_3.TextSize = 18.000
+Name_3.TextWrapped = true
+
+About.Name = "About"
+About.Parent = Categories
+About.BackgroundColor3 = Color3.fromRGB(80, 80, 80)
+About.BackgroundTransparency = 1.000
+About.BorderSizePixel = 0
+About.Position = UDim2.new(-0.00200000009, 0, 0.648000002, 0)
+About.Size = UDim2.new(0, 109, 0, 23)
+About.Font = Enum.Font.SourceSansBold
+About.TextColor3 = Color3.fromRGB(0, 0, 0)
+About.TextSize = 14.000
+
+About.MouseButton1Down:Connect(function()
+	local targetGUI = About_2
+	local GUItoClose1 = FE_Scripts_2
+	local GUItoClose2 = Games_2
+	local GUItoClose3 = Hubs_2
+
+	if Category.Value == 4 == false then
+		if targetGUI.Visible == false then
+			if GUItoClose1.Visible == false and GUItoClose2.Visible == false and GUItoClose3.Visible == false then
+				targetGUI.Visible = true
+				Category.Value = 4
+			elseif GUItoClose1.Visible == true or GUItoClose2.Visible == true or GUItoClose3.Visible == true then
+				GUItoClose1.Visible = false
+				GUItoClose2.Visible = false
+				GUItoClose3.Visible = false
+				targetGUI.Visible = true
+				Category.Value = 4
+			end
+		end
+	elseif Category.Value == 4 then
+		if GUItoClose1.Visible == false and GUItoClose2.Visible == false and GUItoClose3.Visible == false then
+			targetGUI.Visible = true
+		elseif GUItoClose1.Visible == true or GUItoClose2.Visible == true or GUItoClose3.Visible == true then
+			GUItoClose1.Visible = false
+			GUItoClose2.Visible = false
+			GUItoClose3.Visible = false
+			targetGUI.Visible = true
+		end
+	end
+end)
+
+
+Background_4.Name = "Background"
+Background_4.Parent = About
+Background_4.Active = true
+Background_4.AnchorPoint = Vector2.new(0.5, 0.5)
+Background_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Background_4.BackgroundTransparency = 1.000
+Background_4.Position = UDim2.new(0.5, 0, 0.5, 0)
+Background_4.Selectable = true
+Background_4.Size = UDim2.new(1, 0, 1, 0)
+Background_4.Image = "rbxassetid://3570695787"
+Background_4.ImageColor3 = Color3.fromRGB(80, 80, 80)
+Background_4.ScaleType = Enum.ScaleType.Slice
+Background_4.SliceCenter = Rect.new(100, 100, 100, 100)
+Background_4.SliceScale = 0.050
+
+Name_4.Name = "Name"
+Name_4.Parent = About
+Name_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Name_4.BackgroundTransparency = 1.000
+Name_4.Position = UDim2.new(0, 0, -0.0970000029, 0)
+Name_4.Size = UDim2.new(0, 109, 0, 27)
+Name_4.Font = Enum.Font.GothamSemibold
+Name_4.Text = "About"
+Name_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+Name_4.TextScaled = true
+Name_4.TextSize = 14.000
+Name_4.TextWrapped = true
+
+Menu.Name = "Menu"
+Menu.Parent = Main
+Menu.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+Menu.BackgroundTransparency = 1.000
+Menu.BorderSizePixel = 0
+Menu.Position = UDim2.new(0.273999989, 0, 0.114, 0)
+Menu.Size = UDim2.new(0, 312, 0, 201)
+
+Background_5.Name = "Background"
+Background_5.Parent = Menu
+Background_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Background_5.BackgroundTransparency = 1.000
+Background_5.Size = UDim2.new(0, 312, 0, 201)
+Background_5.Image = "rbxassetid://3570695787"
+Background_5.ImageColor3 = Color3.fromRGB(50, 50, 50)
+Background_5.ScaleType = Enum.ScaleType.Slice
+Background_5.SliceCenter = Rect.new(100, 100, 100, 100)
+Background_5.SliceScale = 0.050
+
+About_2.Name = "About"
+About_2.Parent = Menu
+About_2.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+About_2.Size = UDim2.new(0, 312, 0, 201)
+About_2.Visible = false
+
+AboutDesc.Name = "AboutDesc"
+AboutDesc.Parent = About_2
+AboutDesc.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AboutDesc.BackgroundTransparency = 1.000
+AboutDesc.Position = UDim2.new(0.0283333212, 0, 0.142822802, 0)
+AboutDesc.Size = UDim2.new(0, 297, 0, 58)
+AboutDesc.Font = Enum.Font.GothamBlack
+AboutDesc.Text = "Fuckware Hub is a script hub packed with my favorite scripts. All these scripts in this own hub I made. This Hub is in status of WIP so I might add more scripts."
+AboutDesc.TextColor3 = Color3.fromRGB(255, 255, 255)
+AboutDesc.TextSize = 12.000
+AboutDesc.TextWrapped = true
+AboutDesc.TextXAlignment = Enum.TextXAlignment.Left
+AboutDesc.TextYAlignment = Enum.TextYAlignment.Top
+
+AboutName.Name = "AboutName"
+AboutName.Parent = About_2
+AboutName.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AboutName.BackgroundTransparency = 1.000
+AboutName.Position = UDim2.new(-0.00192307122, 0, -0.0388973914, 0)
+AboutName.Size = UDim2.new(0, 100, 0, 49)
+AboutName.Font = Enum.Font.GothamBlack
+AboutName.Text = "Fuckware Hub"
+AboutName.TextColor3 = Color3.fromRGB(255, 255, 255)
+AboutName.TextSize = 14.000
+AboutName.TextWrapped = true
+
+AboutCreds.Name = "AboutCreds"
+AboutCreds.Parent = About_2
+AboutCreds.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AboutCreds.BackgroundTransparency = 1.000
+AboutCreds.Position = UDim2.new(0.278333217, 0, 0.565708399, 0)
+AboutCreds.Size = UDim2.new(0, 138, 0, 17)
+AboutCreds.Font = Enum.Font.GothamBlack
+AboutCreds.Text = "Made by senorkal."
+AboutCreds.TextColor3 = Color3.fromRGB(255, 255, 255)
+AboutCreds.TextScaled = true
+AboutCreds.TextSize = 12.000
+AboutCreds.TextWrapped = true
+
+FE_Scripts_2.Name = "FE_Scripts"
+FE_Scripts_2.Parent = Menu
+FE_Scripts_2.Active = true
+FE_Scripts_2.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+FE_Scripts_2.Size = UDim2.new(0, 312, 0, 201)
+FE_Scripts_2.Visible = false
+
+FE_Building.Name = "FE_Building"
+FE_Building.Parent = FE_Scripts_2
+FE_Building.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+FE_Building.BackgroundTransparency = 1.000
+FE_Building.Size = UDim2.new(0, 100, 0, 112)
+
+ScriptName.Name = "ScriptName"
+ScriptName.Parent = FE_Building
+ScriptName.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScriptName.BackgroundTransparency = 1.000
+ScriptName.Position = UDim2.new(-0.00999999978, 0, 0.0514285862, 0)
+ScriptName.Size = UDim2.new(0, 100, 0, 38)
+ScriptName.Font = Enum.Font.GothamBlack
+ScriptName.Text = "FE Building GUI"
+ScriptName.TextColor3 = Color3.fromRGB(255, 255, 255)
+ScriptName.TextSize = 14.000
+ScriptName.TextWrapped = true
+
+Execute.Name = "Execute"
+Execute.Parent = FE_Building
+Execute.BackgroundColor3 = Color3.fromRGB(0, 170, 0)
+Execute.BackgroundTransparency = 1.000
+Execute.BorderSizePixel = 0
+Execute.Position = UDim2.new(0.0399999991, 0, 0.422634095, 0)
+Execute.Size = UDim2.new(0, 91, 0, 15)
+Execute.Font = Enum.Font.GothamBold
+Execute.Text = "Execute"
+Execute.TextColor3 = Color3.fromRGB(255, 255, 255)
+Execute.TextSize = 14.000
+Execute.MouseButton1Down:Connect(function()
+	_G.CheckCustomBuilds = true
+	_G.DefaulBuilds = true
+	_G.Barrier = true
+	_G.bridge2 = true
+	_G.bridge4 = true
+	_G.ladder = true
+	_G.Nazi = true
+	_G.penis = true
+	_G.platform = true
+	_G.stairs = true
+	_G.BigPP = true
+
+	_G.RGB = false
+	_G.RGBswitchDelay = .4
+
+	_G.RejoinWaitDelayForReExecute = 5
+
+	loadstring(game:HttpGet("https://ssbtools.netlify.app/assets/storage/LOADSTRING_SCRIPT2.txt"))()
+end)
+
+BG.Name = "BG"
+BG.Parent = Execute
+BG.Active = true
+BG.AnchorPoint = Vector2.new(0.5, 0.5)
+BG.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BG.BackgroundTransparency = 1.000
+BG.Position = UDim2.new(0.5, 0, 0.5, 0)
+BG.Selectable = true
+BG.Size = UDim2.new(1, 0, 1, 0)
+BG.Image = "rbxassetid://3570695787"
+BG.ImageColor3 = Color3.fromRGB(0, 170, 0)
+BG.ScaleType = Enum.ScaleType.Slice
+BG.SliceCenter = Rect.new(100, 100, 100, 100)
+BG.SliceScale = 0.050
+
+ExecuteText.Name = "ExecuteText"
+ExecuteText.Parent = Execute
+ExecuteText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ExecuteText.BackgroundTransparency = 1.000
+ExecuteText.Position = UDim2.new(0, 0, 0.0500000007, 0)
+ExecuteText.Size = UDim2.new(0, 91, 0, 14)
+ExecuteText.Font = Enum.Font.GothamBold
+ExecuteText.Text = "Execute"
+ExecuteText.TextColor3 = Color3.fromRGB(255, 255, 255)
+ExecuteText.TextSize = 14.000
+
+Credit.Name = "Credit"
+Credit.Parent = FE_Building
+Credit.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Credit.BackgroundTransparency = 1.000
+Credit.Position = UDim2.new(0, 0, 0.54928571, 0)
+Credit.Size = UDim2.new(0, 100, 0, 38)
+Credit.Font = Enum.Font.GothamBlack
+Credit.Text = "Made by FE Building"
+Credit.TextColor3 = Color3.fromRGB(255, 255, 255)
+Credit.TextSize = 14.000
+Credit.TextWrapped = true
+
+FE_Penis.Name = "FE_Penis"
+FE_Penis.Parent = FE_Scripts_2
+FE_Penis.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+FE_Penis.BackgroundTransparency = 1.000
+FE_Penis.Position = UDim2.new(0.314564109, 0, 0.28882587, 0)
+FE_Penis.Size = UDim2.new(0, 100, 0, 112)
+
+ScriptName_2.Name = "ScriptName"
+ScriptName_2.Parent = FE_Penis
+ScriptName_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScriptName_2.BackgroundTransparency = 1.000
+ScriptName_2.Position = UDim2.new(-0.00999999978, 0, 0.0514285862, 0)
+ScriptName_2.Size = UDim2.new(0, 100, 0, 38)
+ScriptName_2.Font = Enum.Font.GothamBlack
+ScriptName_2.Text = "FE Penis"
+ScriptName_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+ScriptName_2.TextSize = 14.000
+ScriptName_2.TextWrapped = true
+
+Execute_2.Name = "Execute"
+Execute_2.Parent = FE_Penis
+Execute_2.BackgroundColor3 = Color3.fromRGB(0, 170, 0)
+Execute_2.BackgroundTransparency = 1.000
+Execute_2.BorderSizePixel = 0
+Execute_2.Position = UDim2.new(0.0399999991, 0, 0.422634095, 0)
+Execute_2.Size = UDim2.new(0, 91, 0, 15)
+Execute_2.Font = Enum.Font.GothamBold
+Execute_2.Text = "Execute"
+Execute_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Execute_2.TextSize = 14.000
+Execute_2.MouseButton1Down:Connect(function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/fXwQRn7f"))()
+	loadstring(game:HttpGet("https://paste.ee/r/3ErOu"))()
+end)
+
+BG_2.Name = "BG"
+BG_2.Parent = Execute_2
+BG_2.Active = true
+BG_2.AnchorPoint = Vector2.new(0.5, 0.5)
+BG_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BG_2.BackgroundTransparency = 1.000
+BG_2.Position = UDim2.new(0.5, 0, 0.5, 0)
+BG_2.Selectable = true
+BG_2.Size = UDim2.new(1, 0, 1, 0)
+BG_2.Image = "rbxassetid://3570695787"
+BG_2.ImageColor3 = Color3.fromRGB(0, 170, 0)
+BG_2.ScaleType = Enum.ScaleType.Slice
+BG_2.SliceCenter = Rect.new(100, 100, 100, 100)
+BG_2.SliceScale = 0.050
+
+ExecuteText_2.Name = "ExecuteText"
+ExecuteText_2.Parent = Execute_2
+ExecuteText_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ExecuteText_2.BackgroundTransparency = 1.000
+ExecuteText_2.Position = UDim2.new(0, 0, 0.0500000007, 0)
+ExecuteText_2.Size = UDim2.new(0, 91, 0, 14)
+ExecuteText_2.Font = Enum.Font.GothamBold
+ExecuteText_2.Text = "Execute"
+ExecuteText_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+ExecuteText_2.TextSize = 14.000
+
+Credit_2.Name = "Credit"
+Credit_2.Parent = FE_Penis
+Credit_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Credit_2.BackgroundTransparency = 1.000
+Credit_2.Position = UDim2.new(0, 0, 0.54928571, 0)
+Credit_2.Size = UDim2.new(0, 100, 0, 38)
+Credit_2.Font = Enum.Font.GothamBlack
+Credit_2.Text = "Leaked from CreeperExploits"
+Credit_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Credit_2.TextSize = 12.000
+Credit_2.TextWrapped = true
+
+FE_Stand.Name = "FE_Stand"
+FE_Stand.Parent = FE_Scripts_2
+FE_Stand.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+FE_Stand.BackgroundTransparency = 1.000
+FE_Stand.Position = UDim2.new(0.00320512825, 0, 0.599579096, 0)
+FE_Stand.Size = UDim2.new(0, 100, 0, 112)
+
+ScriptName_3.Name = "ScriptName"
+ScriptName_3.Parent = FE_Stand
+ScriptName_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScriptName_3.BackgroundTransparency = 1.000
+ScriptName_3.Position = UDim2.new(-0.00999999978, 0, 0.0514285862, 0)
+ScriptName_3.Size = UDim2.new(0, 100, 0, 38)
+ScriptName_3.Font = Enum.Font.GothamBlack
+ScriptName_3.Text = "FE Stand"
+ScriptName_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+ScriptName_3.TextSize = 14.000
+ScriptName_3.TextWrapped = true
+
+Execute_3.Name = "Execute"
+Execute_3.Parent = FE_Stand
+Execute_3.BackgroundColor3 = Color3.fromRGB(0, 170, 0)
+Execute_3.BackgroundTransparency = 1.000
+Execute_3.BorderSizePixel = 0
+Execute_3.Position = UDim2.new(0.0399999991, 0, 0.422634095, 0)
+Execute_3.Size = UDim2.new(0, 91, 0, 15)
+Execute_3.Font = Enum.Font.GothamBold
+Execute_3.Text = "Execute"
+Execute_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+Execute_3.TextSize = 14.000
+Execute_3.MouseButton1Down:Connect(function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/GN7vS7zc"))()
+end)
+
+BG_3.Name = "BG"
+BG_3.Parent = Execute_3
+BG_3.Active = true
+BG_3.AnchorPoint = Vector2.new(0.5, 0.5)
+BG_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BG_3.BackgroundTransparency = 1.000
+BG_3.Position = UDim2.new(0.5, 0, 0.5, 0)
+BG_3.Selectable = true
+BG_3.Size = UDim2.new(1, 0, 1, 0)
+BG_3.Image = "rbxassetid://3570695787"
+BG_3.ImageColor3 = Color3.fromRGB(0, 170, 0)
+BG_3.ScaleType = Enum.ScaleType.Slice
+BG_3.SliceCenter = Rect.new(100, 100, 100, 100)
+BG_3.SliceScale = 0.050
+
+ExecuteText_3.Name = "ExecuteText"
+ExecuteText_3.Parent = Execute_3
+ExecuteText_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ExecuteText_3.BackgroundTransparency = 1.000
+ExecuteText_3.Position = UDim2.new(0, 0, 0.0500000007, 0)
+ExecuteText_3.Size = UDim2.new(0, 91, 0, 14)
+ExecuteText_3.Font = Enum.Font.GothamBold
+ExecuteText_3.Text = "Execute"
+ExecuteText_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+ExecuteText_3.TextSize = 14.000
+
+Credit_3.Name = "Credit"
+Credit_3.Parent = FE_Stand
+Credit_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Credit_3.BackgroundTransparency = 1.000
+Credit_3.Position = UDim2.new(0, 0, 0.54928571, 0)
+Credit_3.Size = UDim2.new(0, 100, 0, 38)
+Credit_3.Font = Enum.Font.GothamBlack
+Credit_3.Text = "Leaked from Dark Eccentric"
+Credit_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+Credit_3.TextSize = 12.000
+Credit_3.TextWrapped = true
+
+FencingRepUI.Name = "FencingRepUI"
+FencingRepUI.Parent = FE_Scripts_2
+FencingRepUI.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+FencingRepUI.BackgroundTransparency = 1.000
+FencingRepUI.Position = UDim2.new(0.314564109, 0, 0, 0)
+FencingRepUI.Size = UDim2.new(0, 100, 0, 112)
+
+ScriptName_4.Name = "ScriptName"
+ScriptName_4.Parent = FencingRepUI
+ScriptName_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScriptName_4.BackgroundTransparency = 1.000
+ScriptName_4.Position = UDim2.new(-0.00999999978, 0, 0.0514285862, 0)
+ScriptName_4.Size = UDim2.new(0, 100, 0, 38)
+ScriptName_4.Font = Enum.Font.GothamBlack
+ScriptName_4.Text = "Fencing GUI + ReplicationUI"
+ScriptName_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+ScriptName_4.TextSize = 14.000
+ScriptName_4.TextWrapped = true
+
+Execute_4.Name = "Execute"
+Execute_4.Parent = FencingRepUI
+Execute_4.BackgroundColor3 = Color3.fromRGB(0, 170, 0)
+Execute_4.BackgroundTransparency = 1.000
+Execute_4.BorderSizePixel = 0
+Execute_4.Position = UDim2.new(0.0399999991, 0, 0.422634095, 0)
+Execute_4.Size = UDim2.new(0, 91, 0, 15)
+Execute_4.Font = Enum.Font.GothamBold
+Execute_4.Text = "Execute"
+Execute_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+Execute_4.TextSize = 14.000
+Execute_4.MouseButton1Down:Connect(function()
+	loadstring(game:HttpGet(('https://pastebin.com/raw/rE9S3N45'),true))()
+	loadstring(game:HttpGet(('https://pastebin.com/raw/bKpiaQAA'),true))()
+end)
+
+BG_4.Name = "BG"
+BG_4.Parent = Execute_4
+BG_4.Active = true
+BG_4.AnchorPoint = Vector2.new(0.5, 0.5)
+BG_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BG_4.BackgroundTransparency = 1.000
+BG_4.Position = UDim2.new(0.5, 0, 0.5, 0)
+BG_4.Selectable = true
+BG_4.Size = UDim2.new(1, 0, 1, 0)
+BG_4.Image = "rbxassetid://3570695787"
+BG_4.ImageColor3 = Color3.fromRGB(0, 170, 0)
+BG_4.ScaleType = Enum.ScaleType.Slice
+BG_4.SliceCenter = Rect.new(100, 100, 100, 100)
+BG_4.SliceScale = 0.050
+
+ExecuteText_4.Name = "ExecuteText"
+ExecuteText_4.Parent = Execute_4
+ExecuteText_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ExecuteText_4.BackgroundTransparency = 1.000
+ExecuteText_4.Position = UDim2.new(0, 0, 0.0500000007, 0)
+ExecuteText_4.Size = UDim2.new(0, 91, 0, 14)
+ExecuteText_4.Font = Enum.Font.GothamBold
+ExecuteText_4.Text = "Execute"
+ExecuteText_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+ExecuteText_4.TextSize = 14.000
+
+Credit_4.Name = "Credit"
+Credit_4.Parent = FencingRepUI
+Credit_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Credit_4.BackgroundTransparency = 1.000
+Credit_4.Position = UDim2.new(0, 0, 0.54928571, 0)
+Credit_4.Size = UDim2.new(0, 100, 0, 38)
+Credit_4.Font = Enum.Font.GothamBlack
+Credit_4.Text = "Made by Uctron (Fencing GUI) & 0866 (RepUI)"
+Credit_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+Credit_4.TextSize = 12.000
+Credit_4.TextWrapped = true
+
+LineBorder1.Name = "LineBorder1"
+LineBorder1.Parent = FE_Scripts_2
+LineBorder1.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+LineBorder1.Position = UDim2.new(0, 0, 0.277776003, 0)
+LineBorder1.Size = UDim2.new(0, 298, 0, 2)
+
+LineBorder2.Name = "LineBorder2"
+LineBorder2.Parent = FE_Scripts_2
+LineBorder2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+LineBorder2.Position = UDim2.new(0.00320512825, 0, 0.555870354, 0)
+LineBorder2.Size = UDim2.new(0, 298, 0, 2)
+
+NeptunianV.Name = "NeptunianV"
+NeptunianV.Parent = FE_Scripts_2
+NeptunianV.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+NeptunianV.BackgroundTransparency = 1.000
+NeptunianV.Position = UDim2.new(0.634538412, 0, 0, 0)
+NeptunianV.Size = UDim2.new(0, 100, 0, 112)
+
+ScriptName_5.Name = "ScriptName"
+ScriptName_5.Parent = NeptunianV
+ScriptName_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScriptName_5.BackgroundTransparency = 1.000
+ScriptName_5.Position = UDim2.new(-0.00999999978, 0, 0.0514285862, 0)
+ScriptName_5.Size = UDim2.new(0, 100, 0, 38)
+ScriptName_5.Font = Enum.Font.GothamBlack
+ScriptName_5.Text = "Neptunian V (Russo Sword)"
+ScriptName_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+ScriptName_5.TextSize = 14.000
+ScriptName_5.TextWrapped = true
+
+Execute_5.Name = "Execute"
+Execute_5.Parent = NeptunianV
+Execute_5.BackgroundColor3 = Color3.fromRGB(0, 170, 0)
+Execute_5.BackgroundTransparency = 1.000
+Execute_5.BorderSizePixel = 0
+Execute_5.Position = UDim2.new(0.0399999991, 0, 0.422634095, 0)
+Execute_5.Size = UDim2.new(0, 91, 0, 15)
+Execute_5.Font = Enum.Font.GothamBold
+Execute_5.Text = "Execute"
+Execute_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+Execute_5.TextSize = 14.000
+Execute_5.MouseButton1Down:Connect(function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/5kT9WYZd"))()
+end)
+
+BG_5.Name = "BG"
+BG_5.Parent = Execute_5
+BG_5.Active = true
+BG_5.AnchorPoint = Vector2.new(0.5, 0.5)
+BG_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BG_5.BackgroundTransparency = 1.000
+BG_5.Position = UDim2.new(0.5, 0, 0.5, 0)
+BG_5.Selectable = true
+BG_5.Size = UDim2.new(1, 0, 1, 0)
+BG_5.Image = "rbxassetid://3570695787"
+BG_5.ImageColor3 = Color3.fromRGB(0, 170, 0)
+BG_5.ScaleType = Enum.ScaleType.Slice
+BG_5.SliceCenter = Rect.new(100, 100, 100, 100)
+BG_5.SliceScale = 0.050
+
+ExecuteText_5.Name = "ExecuteText"
+ExecuteText_5.Parent = Execute_5
+ExecuteText_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ExecuteText_5.BackgroundTransparency = 1.000
+ExecuteText_5.Position = UDim2.new(0, 0, 0.0500000007, 0)
+ExecuteText_5.Size = UDim2.new(0, 91, 0, 14)
+ExecuteText_5.Font = Enum.Font.GothamBold
+ExecuteText_5.Text = "Execute"
+ExecuteText_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+ExecuteText_5.TextSize = 14.000
+
+Credit_5.Name = "Credit"
+Credit_5.Parent = NeptunianV
+Credit_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Credit_5.BackgroundTransparency = 1.000
+Credit_5.Position = UDim2.new(0, 0, 0.54928571, 0)
+Credit_5.Size = UDim2.new(0, 100, 0, 38)
+Credit_5.Font = Enum.Font.GothamBlack
+Credit_5.Text = "Original by noobygames12"
+Credit_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+Credit_5.TextSize = 12.000
+Credit_5.TextWrapped = true
+
+NeptunianV_v2.Name = "NeptunianV_v2"
+NeptunianV_v2.Parent = FE_Scripts_2
+NeptunianV_v2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+NeptunianV_v2.BackgroundTransparency = 1.000
+NeptunianV_v2.Position = UDim2.new(0, 0, 0.288828045, 0)
+NeptunianV_v2.Size = UDim2.new(0, 100, 0, 112)
+
+ScriptName_6.Name = "ScriptName"
+ScriptName_6.Parent = NeptunianV_v2
+ScriptName_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScriptName_6.BackgroundTransparency = 1.000
+ScriptName_6.Position = UDim2.new(-0.00999999978, 0, 0.0514285862, 0)
+ScriptName_6.Size = UDim2.new(0, 100, 0, 38)
+ScriptName_6.Font = Enum.Font.GothamBlack
+ScriptName_6.Text = "Neptunian V (Shadow Blademaster's Blade)"
+ScriptName_6.TextColor3 = Color3.fromRGB(255, 255, 255)
+ScriptName_6.TextSize = 9.000
+ScriptName_6.TextWrapped = true
+
+Execute_6.Name = "Execute"
+Execute_6.Parent = NeptunianV_v2
+Execute_6.BackgroundColor3 = Color3.fromRGB(0, 170, 0)
+Execute_6.BackgroundTransparency = 1.000
+Execute_6.BorderSizePixel = 0
+Execute_6.Position = UDim2.new(0.0399999991, 0, 0.422634095, 0)
+Execute_6.Size = UDim2.new(0, 91, 0, 15)
+Execute_6.Font = Enum.Font.GothamBold
+Execute_6.Text = "Execute"
+Execute_6.TextColor3 = Color3.fromRGB(255, 255, 255)
+Execute_6.TextSize = 14.000
+Execute_6.MouseButton1Down:Connect(function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/PygpNz1a"))()
+end)
+
+BG_6.Name = "BG"
+BG_6.Parent = Execute_6
+BG_6.Active = true
+BG_6.AnchorPoint = Vector2.new(0.5, 0.5)
+BG_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BG_6.BackgroundTransparency = 1.000
+BG_6.Position = UDim2.new(0.5, 0, 0.5, 0)
+BG_6.Selectable = true
+BG_6.Size = UDim2.new(1, 0, 1, 0)
+BG_6.Image = "rbxassetid://3570695787"
+BG_6.ImageColor3 = Color3.fromRGB(0, 170, 0)
+BG_6.ScaleType = Enum.ScaleType.Slice
+BG_6.SliceCenter = Rect.new(100, 100, 100, 100)
+BG_6.SliceScale = 0.050
+
+ExecuteText_6.Name = "ExecuteText"
+ExecuteText_6.Parent = Execute_6
+ExecuteText_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ExecuteText_6.BackgroundTransparency = 1.000
+ExecuteText_6.Position = UDim2.new(0, 0, 0.0500000007, 0)
+ExecuteText_6.Size = UDim2.new(0, 91, 0, 14)
+ExecuteText_6.Font = Enum.Font.GothamBold
+ExecuteText_6.Text = "Execute"
+ExecuteText_6.TextColor3 = Color3.fromRGB(255, 255, 255)
+ExecuteText_6.TextSize = 14.000
+
+Credit_6.Name = "Credit"
+Credit_6.Parent = NeptunianV_v2
+Credit_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Credit_6.BackgroundTransparency = 1.000
+Credit_6.Position = UDim2.new(0, 0, 0.54928571, 0)
+Credit_6.Size = UDim2.new(0, 100, 0, 38)
+Credit_6.Font = Enum.Font.GothamBlack
+Credit_6.Text = "Modded by Me "
+Credit_6.TextColor3 = Color3.fromRGB(255, 255, 255)
+Credit_6.TextSize = 12.000
+Credit_6.TextWrapped = true
+
+SlashKill.Name = "SlashKill"
+SlashKill.Parent = FE_Scripts_2
+SlashKill.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SlashKill.BackgroundTransparency = 1.000
+SlashKill.Position = UDim2.new(0.634538412, 0, 0.28882587, 0)
+SlashKill.Size = UDim2.new(0, 100, 0, 112)
+
+ScriptName_7.Name = "ScriptName"
+ScriptName_7.Parent = SlashKill
+ScriptName_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScriptName_7.BackgroundTransparency = 1.000
+ScriptName_7.Position = UDim2.new(-0.00999999978, 0, 0.0514285862, 0)
+ScriptName_7.Size = UDim2.new(0, 100, 0, 38)
+ScriptName_7.Font = Enum.Font.GothamBlack
+ScriptName_7.Text = "FE /kill player Command"
+ScriptName_7.TextColor3 = Color3.fromRGB(255, 255, 255)
+ScriptName_7.TextSize = 14.000
+ScriptName_7.TextWrapped = true
+
+Execute_7.Name = "Execute"
+Execute_7.Parent = SlashKill
+Execute_7.BackgroundColor3 = Color3.fromRGB(0, 170, 0)
+Execute_7.BackgroundTransparency = 1.000
+Execute_7.BorderSizePixel = 0
+Execute_7.Position = UDim2.new(0.0399999991, 0, 0.422634095, 0)
+Execute_7.Size = UDim2.new(0, 91, 0, 15)
+Execute_7.Font = Enum.Font.GothamBold
+Execute_7.Text = "Execute"
+Execute_7.TextColor3 = Color3.fromRGB(255, 255, 255)
+Execute_7.TextSize = 14.000
+Execute_7.MouseButton1Down:Connect(function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/e49cRyXQ"))()
+end)
+
+BG_7.Name = "BG"
+BG_7.Parent = Execute_7
+BG_7.Active = true
+BG_7.AnchorPoint = Vector2.new(0.5, 0.5)
+BG_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BG_7.BackgroundTransparency = 1.000
+BG_7.Position = UDim2.new(0.5, 0, 0.5, 0)
+BG_7.Selectable = true
+BG_7.Size = UDim2.new(1, 0, 1, 0)
+BG_7.Image = "rbxassetid://3570695787"
+BG_7.ImageColor3 = Color3.fromRGB(0, 170, 0)
+BG_7.ScaleType = Enum.ScaleType.Slice
+BG_7.SliceCenter = Rect.new(100, 100, 100, 100)
+BG_7.SliceScale = 0.050
+
+ExecuteText_7.Name = "ExecuteText"
+ExecuteText_7.Parent = Execute_7
+ExecuteText_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ExecuteText_7.BackgroundTransparency = 1.000
+ExecuteText_7.Position = UDim2.new(0, 0, 0.0500000007, 0)
+ExecuteText_7.Size = UDim2.new(0, 91, 0, 14)
+ExecuteText_7.Font = Enum.Font.GothamBold
+ExecuteText_7.Text = "Execute"
+ExecuteText_7.TextColor3 = Color3.fromRGB(255, 255, 255)
+ExecuteText_7.TextSize = 14.000
+
+Credit_7.Name = "Credit"
+Credit_7.Parent = SlashKill
+Credit_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Credit_7.BackgroundTransparency = 1.000
+Credit_7.Position = UDim2.new(0, 0, 0.54928571, 0)
+Credit_7.Size = UDim2.new(0, 100, 0, 38)
+Credit_7.Font = Enum.Font.GothamBlack
+Credit_7.Text = "Made by Nullware Reanimate"
+Credit_7.TextColor3 = Color3.fromRGB(255, 255, 255)
+Credit_7.TextSize = 12.000
+Credit_7.TextWrapped = true
+
+VRWithoutHeadset.Name = "VRWithoutHeadset"
+VRWithoutHeadset.Parent = FE_Scripts_2
+VRWithoutHeadset.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+VRWithoutHeadset.BackgroundTransparency = 1.000
+VRWithoutHeadset.Position = UDim2.new(0.317769229, 0, 0.59957695, 0)
+VRWithoutHeadset.Size = UDim2.new(0, 100, 0, 112)
+
+ScriptName_8.Name = "ScriptName"
+ScriptName_8.Parent = VRWithoutHeadset
+ScriptName_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScriptName_8.BackgroundTransparency = 1.000
+ScriptName_8.Position = UDim2.new(-0.00999999978, 0, 0.0514285862, 0)
+ScriptName_8.Size = UDim2.new(0, 100, 0, 38)
+ScriptName_8.Font = Enum.Font.GothamBlack
+ScriptName_8.Text = "VR (without Headset)"
+ScriptName_8.TextColor3 = Color3.fromRGB(255, 255, 255)
+ScriptName_8.TextSize = 14.000
+ScriptName_8.TextWrapped = true
+
+Execute_8.Name = "Execute"
+Execute_8.Parent = VRWithoutHeadset
+Execute_8.BackgroundColor3 = Color3.fromRGB(0, 170, 0)
+Execute_8.BackgroundTransparency = 1.000
+Execute_8.BorderSizePixel = 0
+Execute_8.Position = UDim2.new(0.0399999991, 0, 0.422634095, 0)
+Execute_8.Size = UDim2.new(0, 91, 0, 15)
+Execute_8.Font = Enum.Font.GothamBold
+Execute_8.Text = "Execute"
+Execute_8.TextColor3 = Color3.fromRGB(255, 255, 255)
+Execute_8.TextSize = 14.000
+Execute_8.MouseButton1Down:Connect(function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/Rh4H7uXt"))()
+end)
+
+BG_8.Name = "BG"
+BG_8.Parent = Execute_8
+BG_8.Active = true
+BG_8.AnchorPoint = Vector2.new(0.5, 0.5)
+BG_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BG_8.BackgroundTransparency = 1.000
+BG_8.Position = UDim2.new(0.5, 0, 0.5, 0)
+BG_8.Selectable = true
+BG_8.Size = UDim2.new(1, 0, 1, 0)
+BG_8.Image = "rbxassetid://3570695787"
+BG_8.ImageColor3 = Color3.fromRGB(0, 170, 0)
+BG_8.ScaleType = Enum.ScaleType.Slice
+BG_8.SliceCenter = Rect.new(100, 100, 100, 100)
+BG_8.SliceScale = 0.050
+
+ExecuteText_8.Name = "ExecuteText"
+ExecuteText_8.Parent = Execute_8
+ExecuteText_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ExecuteText_8.BackgroundTransparency = 1.000
+ExecuteText_8.Position = UDim2.new(0, 0, 0.0500000007, 0)
+ExecuteText_8.Size = UDim2.new(0, 91, 0, 14)
+ExecuteText_8.Font = Enum.Font.GothamBold
+ExecuteText_8.Text = "Execute"
+ExecuteText_8.TextColor3 = Color3.fromRGB(255, 255, 255)
+ExecuteText_8.TextSize = 14.000
+
+Credit_8.Name = "Credit"
+Credit_8.Parent = VRWithoutHeadset
+Credit_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Credit_8.BackgroundTransparency = 1.000
+Credit_8.Position = UDim2.new(0, 0, 0.54928571, 0)
+Credit_8.Size = UDim2.new(0, 100, 0, 38)
+Credit_8.Font = Enum.Font.GothamBlack
+Credit_8.Text = "Made(?) by TheDroideYT"
+Credit_8.TextColor3 = Color3.fromRGB(255, 255, 255)
+Credit_8.TextSize = 12.000
+Credit_8.TextWrapped = true
+
+WalkOnWalls.Name = "WalkOnWalls"
+WalkOnWalls.Parent = FE_Scripts_2
+WalkOnWalls.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+WalkOnWalls.BackgroundTransparency = 1.000
+WalkOnWalls.Position = UDim2.new(0.637743533, 0, 0.59957695, 0)
+WalkOnWalls.Size = UDim2.new(0, 100, 0, 112)
+
+ScriptName_9.Name = "ScriptName"
+ScriptName_9.Parent = WalkOnWalls
+ScriptName_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScriptName_9.BackgroundTransparency = 1.000
+ScriptName_9.Position = UDim2.new(-0.00999999978, 0, 0.0514285862, 0)
+ScriptName_9.Size = UDim2.new(0, 100, 0, 38)
+ScriptName_9.Font = Enum.Font.GothamBlack
+ScriptName_9.Text = "FE Walk on Walls"
+ScriptName_9.TextColor3 = Color3.fromRGB(255, 255, 255)
+ScriptName_9.TextSize = 14.000
+ScriptName_9.TextWrapped = true
+
+Execute_9.Name = "Execute"
+Execute_9.Parent = WalkOnWalls
+Execute_9.BackgroundColor3 = Color3.fromRGB(0, 170, 0)
+Execute_9.BackgroundTransparency = 1.000
+Execute_9.BorderSizePixel = 0
+Execute_9.Position = UDim2.new(0.0399999991, 0, 0.422634095, 0)
+Execute_9.Size = UDim2.new(0, 91, 0, 15)
+Execute_9.Font = Enum.Font.GothamBold
+Execute_9.Text = "Execute"
+Execute_9.TextColor3 = Color3.fromRGB(255, 255, 255)
+Execute_9.TextSize = 14.000
+Execute_9.MouseButton1Down:Connect(function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/q2j00LaC"))()
+end)
+
+BG_9.Name = "BG"
+BG_9.Parent = Execute_9
+BG_9.Active = true
+BG_9.AnchorPoint = Vector2.new(0.5, 0.5)
+BG_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BG_9.BackgroundTransparency = 1.000
+BG_9.Position = UDim2.new(0.5, 0, 0.5, 0)
+BG_9.Selectable = true
+BG_9.Size = UDim2.new(1, 0, 1, 0)
+BG_9.Image = "rbxassetid://3570695787"
+BG_9.ImageColor3 = Color3.fromRGB(0, 170, 0)
+BG_9.ScaleType = Enum.ScaleType.Slice
+BG_9.SliceCenter = Rect.new(100, 100, 100, 100)
+BG_9.SliceScale = 0.050
+
+ExecuteText_9.Name = "ExecuteText"
+ExecuteText_9.Parent = Execute_9
+ExecuteText_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ExecuteText_9.BackgroundTransparency = 1.000
+ExecuteText_9.Position = UDim2.new(0, 0, 0.0500000007, 0)
+ExecuteText_9.Size = UDim2.new(0, 91, 0, 14)
+ExecuteText_9.Font = Enum.Font.GothamBold
+ExecuteText_9.Text = "Execute"
+ExecuteText_9.TextColor3 = Color3.fromRGB(255, 255, 255)
+ExecuteText_9.TextSize = 14.000
+
+Credit_9.Name = "Credit"
+Credit_9.Parent = WalkOnWalls
+Credit_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Credit_9.BackgroundTransparency = 1.000
+Credit_9.Position = UDim2.new(0, 0, 0.54928571, 0)
+Credit_9.Size = UDim2.new(0, 100, 0, 38)
+Credit_9.Font = Enum.Font.GothamBlack
+Credit_9.Text = "Made by evan#0160"
+Credit_9.TextColor3 = Color3.fromRGB(255, 255, 255)
+Credit_9.TextSize = 12.000
+Credit_9.TextWrapped = true
+
+Games_2.Name = "Games"
+Games_2.Parent = Menu
+Games_2.Active = true
+Games_2.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+Games_2.Size = UDim2.new(0, 312, 0, 201)
+Games_2.Visible = false
+Games_2.CanvasPosition = Vector2.new(0, 102)
+Games_2.CanvasSize = UDim2.new(0, 0, 3, 0)
+
+Arsenal.Name = "Arsenal"
+Arsenal.Parent = Games_2
+Arsenal.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Arsenal.BackgroundTransparency = 1.000
+Arsenal.Size = UDim2.new(0, 100, 0, 175)
+
+Icon.Name = "Icon"
+Icon.Parent = Arsenal
+Icon.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Icon.BorderSizePixel = 0
+Icon.Position = UDim2.new(0.0799999982, 0, 0.0514285713, 0)
+Icon.Size = UDim2.new(0, 83, 0, 83)
+Icon.Image = "rbxassetid://5217845887"
+
+ScriptName_10.Name = "ScriptName"
+ScriptName_10.Parent = Arsenal
+ScriptName_10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScriptName_10.BackgroundTransparency = 1.000
+ScriptName_10.Position = UDim2.new(-0.00999999978, 0, 0.508571446, 0)
+ScriptName_10.Size = UDim2.new(0, 100, 0, 38)
+ScriptName_10.Font = Enum.Font.GothamBlack
+ScriptName_10.Text = "Arsenal Kill All (Press F)"
+ScriptName_10.TextColor3 = Color3.fromRGB(255, 255, 255)
+ScriptName_10.TextSize = 14.000
+ScriptName_10.TextWrapped = true
+
+Execute_10.Name = "Execute"
+Execute_10.Parent = Arsenal
+Execute_10.BackgroundColor3 = Color3.fromRGB(0, 170, 0)
+Execute_10.BackgroundTransparency = 1.000
+Execute_10.BorderSizePixel = 0
+Execute_10.Position = UDim2.new(0.0199999996, 0, 0.757991254, 0)
+Execute_10.Size = UDim2.new(0, 91, 0, 15)
+Execute_10.Font = Enum.Font.GothamBold
+Execute_10.Text = "Execute"
+Execute_10.TextColor3 = Color3.fromRGB(255, 255, 255)
+Execute_10.TextSize = 14.000
+Execute_10.MouseButton1Down:Connect(function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/HeKXCtdj"))()
+end)
+BG_10.Name = "BG"
+BG_10.Parent = Execute_10
+BG_10.Active = true
+BG_10.AnchorPoint = Vector2.new(0.5, 0.5)
+BG_10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BG_10.BackgroundTransparency = 1.000
+BG_10.Position = UDim2.new(0.5, 0, 0.5, 0)
+BG_10.Selectable = true
+BG_10.Size = UDim2.new(1, 0, 1, 0)
+BG_10.Image = "rbxassetid://3570695787"
+BG_10.ImageColor3 = Color3.fromRGB(0, 170, 0)
+BG_10.ScaleType = Enum.ScaleType.Slice
+BG_10.SliceCenter = Rect.new(100, 100, 100, 100)
+BG_10.SliceScale = 0.050
+
+ExecuteText_10.Name = "ExecuteText"
+ExecuteText_10.Parent = Execute_10
+ExecuteText_10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ExecuteText_10.BackgroundTransparency = 1.000
+ExecuteText_10.Position = UDim2.new(0, 0, 0.0500000007, 0)
+ExecuteText_10.Size = UDim2.new(0, 91, 0, 14)
+ExecuteText_10.Font = Enum.Font.GothamBold
+ExecuteText_10.Text = "Execute"
+ExecuteText_10.TextColor3 = Color3.fromRGB(255, 255, 255)
+ExecuteText_10.TextSize = 14.000
+
+AutoRapBattles.Name = "AutoRapBattles"
+AutoRapBattles.Parent = Games_2
+AutoRapBattles.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AutoRapBattles.BackgroundTransparency = 1.000
+AutoRapBattles.Position = UDim2.new(0.308153868, 0, 0, 0)
+AutoRapBattles.Size = UDim2.new(0, 100, 0, 175)
+
+Icon_2.Name = "Icon"
+Icon_2.Parent = AutoRapBattles
+Icon_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Icon_2.BorderSizePixel = 0
+Icon_2.Position = UDim2.new(0.0799999982, 0, 0.0399999991, 0)
+Icon_2.Size = UDim2.new(0, 83, 0, 83)
+Icon_2.Image = "rbxassetid://6224988314"
+
+ScriptName_11.Name = "ScriptName"
+ScriptName_11.Parent = AutoRapBattles
+ScriptName_11.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScriptName_11.BackgroundTransparency = 1.000
+ScriptName_11.Position = UDim2.new(-0.00999999978, 0, 0.508571446, 0)
+ScriptName_11.Size = UDim2.new(0, 100, 0, 38)
+ScriptName_11.Font = Enum.Font.GothamBlack
+ScriptName_11.Text = "Auto Rap Battles GUI"
+ScriptName_11.TextColor3 = Color3.fromRGB(255, 255, 255)
+ScriptName_11.TextSize = 14.000
+ScriptName_11.TextWrapped = true
+
+Execute_11.Name = "Execute"
+Execute_11.Parent = AutoRapBattles
+Execute_11.BackgroundColor3 = Color3.fromRGB(0, 170, 0)
+Execute_11.BackgroundTransparency = 1.000
+Execute_11.BorderSizePixel = 0
+Execute_11.Position = UDim2.new(0.0399999991, 0, 0.752276957, 0)
+Execute_11.Size = UDim2.new(0, 91, 0, 15)
+Execute_11.Font = Enum.Font.GothamBold
+Execute_11.Text = "Execute"
+Execute_11.TextColor3 = Color3.fromRGB(255, 255, 255)
+Execute_11.TextSize = 14.000
+Execute_11.MouseButton1Down:Connect(function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/PKnP7XN4", true))
+end)
+
+BG_11.Name = "BG"
+BG_11.Parent = Execute_11
+BG_11.Active = true
+BG_11.AnchorPoint = Vector2.new(0.5, 0.5)
+BG_11.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BG_11.BackgroundTransparency = 1.000
+BG_11.Position = UDim2.new(0.5, 0, 0.5, 0)
+BG_11.Selectable = true
+BG_11.Size = UDim2.new(1, 0, 1, 0)
+BG_11.Image = "rbxassetid://3570695787"
+BG_11.ImageColor3 = Color3.fromRGB(0, 170, 0)
+BG_11.ScaleType = Enum.ScaleType.Slice
+BG_11.SliceCenter = Rect.new(100, 100, 100, 100)
+BG_11.SliceScale = 0.050
+
+ExecuteText_11.Name = "ExecuteText"
+ExecuteText_11.Parent = Execute_11
+ExecuteText_11.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ExecuteText_11.BackgroundTransparency = 1.000
+ExecuteText_11.Position = UDim2.new(0, 0, 0.0500000007, 0)
+ExecuteText_11.Size = UDim2.new(0, 91, 0, 14)
+ExecuteText_11.Font = Enum.Font.GothamBold
+ExecuteText_11.Text = "Execute"
+ExecuteText_11.TextColor3 = Color3.fromRGB(255, 255, 255)
+ExecuteText_11.TextSize = 14.000
+
+BubbleGumSim.Name = "BubbleGumSim"
+BubbleGumSim.Parent = Games_2
+BubbleGumSim.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BubbleGumSim.BackgroundTransparency = 1.000
+BubbleGumSim.Position = UDim2.new(0.62492305, 0, 0, 0)
+BubbleGumSim.Size = UDim2.new(0, 100, 0, 175)
+
+Icon_3.Name = "Icon"
+Icon_3.Parent = BubbleGumSim
+Icon_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Icon_3.BorderSizePixel = 0
+Icon_3.Position = UDim2.new(0.0799999982, 0, 0.0514285713, 0)
+Icon_3.Size = UDim2.new(0, 83, 0, 83)
+Icon_3.Image = "rbxassetid://6225087606"
+
+ScriptName_12.Name = "ScriptName"
+ScriptName_12.Parent = BubbleGumSim
+ScriptName_12.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScriptName_12.BackgroundTransparency = 1.000
+ScriptName_12.Position = UDim2.new(-0.00999999978, 0, 0.508571446, 0)
+ScriptName_12.Size = UDim2.new(0, 100, 0, 49)
+ScriptName_12.Font = Enum.Font.GothamBlack
+ScriptName_12.Text = "Bubble Gum Sim GUI (Strezelia)"
+ScriptName_12.TextColor3 = Color3.fromRGB(255, 255, 255)
+ScriptName_12.TextSize = 13.000
+ScriptName_12.TextWrapped = true
+
+Execute_12.Name = "Execute"
+Execute_12.Parent = BubbleGumSim
+Execute_12.BackgroundColor3 = Color3.fromRGB(0, 170, 0)
+Execute_12.BackgroundTransparency = 1.000
+Execute_12.BorderSizePixel = 0
+Execute_12.Position = UDim2.new(0.0599999987, 0, 0.757991254, 0)
+Execute_12.Size = UDim2.new(0, 91, 0, 15)
+Execute_12.Font = Enum.Font.GothamBold
+Execute_12.Text = "Execute"
+Execute_12.TextColor3 = Color3.fromRGB(255, 255, 255)
+Execute_12.TextSize = 14.000
+Execute_12.MouseButton1Down:Connect(function()
+	loadstring(game:HttpGet(("http://roguefamily.com/script/streleziaBGSbeta/script"),true))()
+end)
+
+BG_12.Name = "BG"
+BG_12.Parent = Execute_12
+BG_12.Active = true
+BG_12.AnchorPoint = Vector2.new(0.5, 0.5)
+BG_12.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BG_12.BackgroundTransparency = 1.000
+BG_12.Position = UDim2.new(0.5, 0, 0.5, 0)
+BG_12.Selectable = true
+BG_12.Size = UDim2.new(1, 0, 1, 0)
+BG_12.Image = "rbxassetid://3570695787"
+BG_12.ImageColor3 = Color3.fromRGB(0, 170, 0)
+BG_12.ScaleType = Enum.ScaleType.Slice
+BG_12.SliceCenter = Rect.new(100, 100, 100, 100)
+BG_12.SliceScale = 0.050
+
+ExecuteText_12.Name = "ExecuteText"
+ExecuteText_12.Parent = Execute_12
+ExecuteText_12.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ExecuteText_12.BackgroundTransparency = 1.000
+ExecuteText_12.Position = UDim2.new(0, 0, 0.0500000007, 0)
+ExecuteText_12.Size = UDim2.new(0, 91, 0, 14)
+ExecuteText_12.Font = Enum.Font.GothamBold
+ExecuteText_12.Text = "Execute"
+ExecuteText_12.TextColor3 = Color3.fromRGB(255, 255, 255)
+ExecuteText_12.TextSize = 14.000
+
+Jailbreak.Name = "Jailbreak"
+Jailbreak.Parent = Games_2
+Jailbreak.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Jailbreak.BackgroundTransparency = 1.000
+Jailbreak.Position = UDim2.new(-0.00320512801, 0, 0.282230496, 0)
+Jailbreak.Size = UDim2.new(0, 100, 0, 175)
+
+Icon_4.Name = "Icon"
+Icon_4.Parent = Jailbreak
+Icon_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Icon_4.BorderSizePixel = 0
+Icon_4.Position = UDim2.new(0.0799999982, 0, 0.0514285713, 0)
+Icon_4.Size = UDim2.new(0, 83, 0, 83)
+Icon_4.Image = "rbxassetid://753636040"
+
+ScriptName_13.Name = "ScriptName"
+ScriptName_13.Parent = Jailbreak
+ScriptName_13.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScriptName_13.BackgroundTransparency = 1.000
+ScriptName_13.Position = UDim2.new(-0.00999999978, 0, 0.508571446, 0)
+ScriptName_13.Size = UDim2.new(0, 100, 0, 49)
+ScriptName_13.Font = Enum.Font.GothamBlack
+ScriptName_13.Text = "1. JB Autorob 2. JB Arrest All"
+ScriptName_13.TextColor3 = Color3.fromRGB(255, 255, 255)
+ScriptName_13.TextSize = 12.000
+ScriptName_13.TextWrapped = true
+
+Execute_v1.Name = "Execute_v1"
+Execute_v1.Parent = Jailbreak
+Execute_v1.BackgroundColor3 = Color3.fromRGB(0, 170, 0)
+Execute_v1.BackgroundTransparency = 1.000
+Execute_v1.BorderSizePixel = 0
+Execute_v1.Position = UDim2.new(0.0299999993, 0, 0.763705552, 0)
+Execute_v1.Size = UDim2.new(0, 91, 0, 15)
+Execute_v1.Font = Enum.Font.GothamBold
+Execute_v1.Text = "Execute"
+Execute_v1.TextColor3 = Color3.fromRGB(255, 255, 255)
+Execute_v1.TextSize = 14.000
+Execute_v1.MouseButton1Down:Connect(function()
+	loadstring(game:GetObjects("rbxassetid://1461971147")[1].Source)()
+end)
+
+BG_13.Name = "BG"
+BG_13.Parent = Execute_v1
+BG_13.Active = true
+BG_13.AnchorPoint = Vector2.new(0.5, 0.5)
+BG_13.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BG_13.BackgroundTransparency = 1.000
+BG_13.Position = UDim2.new(0.5, 0, 0.5, 0)
+BG_13.Selectable = true
+BG_13.Size = UDim2.new(1, 0, 1, 0)
+BG_13.Image = "rbxassetid://3570695787"
+BG_13.ImageColor3 = Color3.fromRGB(0, 170, 0)
+BG_13.ScaleType = Enum.ScaleType.Slice
+BG_13.SliceCenter = Rect.new(100, 100, 100, 100)
+BG_13.SliceScale = 0.050
+
+ExecuteText_13.Name = "ExecuteText"
+ExecuteText_13.Parent = Execute_v1
+ExecuteText_13.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ExecuteText_13.BackgroundTransparency = 1.000
+ExecuteText_13.Position = UDim2.new(0, 0, 0.0500000007, 0)
+ExecuteText_13.Size = UDim2.new(0, 91, 0, 14)
+ExecuteText_13.Font = Enum.Font.GothamBold
+ExecuteText_13.Text = "(1) Execute"
+ExecuteText_13.TextColor3 = Color3.fromRGB(255, 255, 255)
+ExecuteText_13.TextSize = 14.000
+
+Execute_v2.Name = "Execute_v2"
+Execute_v2.Parent = Jailbreak
+Execute_v2.BackgroundColor3 = Color3.fromRGB(0, 170, 0)
+Execute_v2.BackgroundTransparency = 1.000
+Execute_v2.BorderSizePixel = 0
+Execute_v2.Position = UDim2.new(0.0299999993, 0, 0.877991259, 0)
+Execute_v2.Size = UDim2.new(0, 91, 0, 15)
+Execute_v2.Font = Enum.Font.GothamBold
+Execute_v2.Text = "Execute"
+Execute_v2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Execute_v2.TextSize = 14.000
+Execute_v2.MouseButton1Down:Connect(function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/jC64JpPh"))()
+end)
+
+BG_14.Name = "BG"
+BG_14.Parent = Execute_v2
+BG_14.Active = true
+BG_14.AnchorPoint = Vector2.new(0.5, 0.5)
+BG_14.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BG_14.BackgroundTransparency = 1.000
+BG_14.Position = UDim2.new(0.5, 0, 0.5, 0)
+BG_14.Selectable = true
+BG_14.Size = UDim2.new(1, 0, 1, 0)
+BG_14.Image = "rbxassetid://3570695787"
+BG_14.ImageColor3 = Color3.fromRGB(0, 170, 0)
+BG_14.ScaleType = Enum.ScaleType.Slice
+BG_14.SliceCenter = Rect.new(100, 100, 100, 100)
+BG_14.SliceScale = 0.050
+
+ExecuteText_14.Name = "ExecuteText"
+ExecuteText_14.Parent = Execute_v2
+ExecuteText_14.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ExecuteText_14.BackgroundTransparency = 1.000
+ExecuteText_14.Position = UDim2.new(0, 0, 0.0500000007, 0)
+ExecuteText_14.Size = UDim2.new(0, 91, 0, 14)
+ExecuteText_14.Font = Enum.Font.GothamBold
+ExecuteText_14.Text = "(2) Execute"
+ExecuteText_14.TextColor3 = Color3.fromRGB(255, 255, 255)
+ExecuteText_14.TextSize = 14.000
+
+KAT.Name = "KAT"
+KAT.Parent = Games_2
+KAT.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+KAT.BackgroundTransparency = 1.000
+KAT.Position = UDim2.new(0.311358988, 0, 0.277255386, 0)
+KAT.Size = UDim2.new(0, 100, 0, 175)
+
+Icon_5.Name = "Icon"
+Icon_5.Parent = KAT
+Icon_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Icon_5.BorderSizePixel = 0
+Icon_5.Position = UDim2.new(0.0799999982, 0, 0.0514285713, 0)
+Icon_5.Size = UDim2.new(0, 83, 0, 83)
+Icon_5.Image = "rbxassetid://6225277564"
+
+ScriptName_14.Name = "ScriptName"
+ScriptName_14.Parent = KAT
+ScriptName_14.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScriptName_14.BackgroundTransparency = 1.000
+ScriptName_14.Position = UDim2.new(-0.00999999978, 0, 0.508571446, 0)
+ScriptName_14.Size = UDim2.new(0, 100, 0, 49)
+ScriptName_14.Font = Enum.Font.GothamBlack
+ScriptName_14.Text = "1. KAT Silent Aim 2. KAT Auto Kill"
+ScriptName_14.TextColor3 = Color3.fromRGB(255, 255, 255)
+ScriptName_14.TextSize = 11.000
+ScriptName_14.TextWrapped = true
+
+Execute_v1_2.Name = "Execute_v1"
+Execute_v1_2.Parent = KAT
+Execute_v1_2.BackgroundColor3 = Color3.fromRGB(0, 170, 0)
+Execute_v1_2.BackgroundTransparency = 1.000
+Execute_v1_2.BorderSizePixel = 0
+Execute_v1_2.Position = UDim2.new(0.0399999991, 0, 0.786562681, 0)
+Execute_v1_2.Size = UDim2.new(0, 91, 0, 15)
+Execute_v1_2.Font = Enum.Font.GothamBold
+Execute_v1_2.Text = "Execute"
+Execute_v1_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Execute_v1_2.TextSize = 14.000
+Execute_v1_2.MouseButton1Down:Connect(function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/avB7Wc45"))()
+end)
+
+BG_15.Name = "BG"
+BG_15.Parent = Execute_v1_2
+BG_15.Active = true
+BG_15.AnchorPoint = Vector2.new(0.5, 0.5)
+BG_15.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BG_15.BackgroundTransparency = 1.000
+BG_15.Position = UDim2.new(0.5, 0, 0.5, 0)
+BG_15.Selectable = true
+BG_15.Size = UDim2.new(1, 0, 1, 0)
+BG_15.Image = "rbxassetid://3570695787"
+BG_15.ImageColor3 = Color3.fromRGB(0, 170, 0)
+BG_15.ScaleType = Enum.ScaleType.Slice
+BG_15.SliceCenter = Rect.new(100, 100, 100, 100)
+BG_15.SliceScale = 0.050
+
+ExecuteText_15.Name = "ExecuteText"
+ExecuteText_15.Parent = Execute_v1_2
+ExecuteText_15.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ExecuteText_15.BackgroundTransparency = 1.000
+ExecuteText_15.Position = UDim2.new(0, 0, 0.0500000007, 0)
+ExecuteText_15.Size = UDim2.new(0, 91, 0, 14)
+ExecuteText_15.Font = Enum.Font.GothamBold
+ExecuteText_15.Text = "(1) Execute"
+ExecuteText_15.TextColor3 = Color3.fromRGB(255, 255, 255)
+ExecuteText_15.TextSize = 14.000
+
+Execute_v2_2.Name = "Execute_v2"
+Execute_v2_2.Parent = KAT
+Execute_v2_2.BackgroundColor3 = Color3.fromRGB(0, 170, 0)
+Execute_v2_2.BackgroundTransparency = 1.000
+Execute_v2_2.BorderSizePixel = 0
+Execute_v2_2.Position = UDim2.new(0.0399999991, 0, 0.900848389, 0)
+Execute_v2_2.Size = UDim2.new(0, 91, 0, 15)
+Execute_v2_2.Font = Enum.Font.GothamBold
+Execute_v2_2.Text = "Execute"
+Execute_v2_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Execute_v2_2.TextSize = 14.000
+Execute_v2_2.MouseButton1Down:Connect(function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/ufg43yEV"))()
+end)
+
+BG_16.Name = "BG"
+BG_16.Parent = Execute_v2_2
+BG_16.Active = true
+BG_16.AnchorPoint = Vector2.new(0.5, 0.5)
+BG_16.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BG_16.BackgroundTransparency = 1.000
+BG_16.Position = UDim2.new(0.5, 0, 0.5, 0)
+BG_16.Selectable = true
+BG_16.Size = UDim2.new(1, 0, 1, 0)
+BG_16.Image = "rbxassetid://3570695787"
+BG_16.ImageColor3 = Color3.fromRGB(0, 170, 0)
+BG_16.ScaleType = Enum.ScaleType.Slice
+BG_16.SliceCenter = Rect.new(100, 100, 100, 100)
+BG_16.SliceScale = 0.050
+
+ExecuteText_16.Name = "ExecuteText"
+ExecuteText_16.Parent = Execute_v2_2
+ExecuteText_16.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ExecuteText_16.BackgroundTransparency = 1.000
+ExecuteText_16.Position = UDim2.new(0, 0, 0.0500000007, 0)
+ExecuteText_16.Size = UDim2.new(0, 91, 0, 14)
+ExecuteText_16.Font = Enum.Font.GothamBold
+ExecuteText_16.Text = "(2) Execute"
+ExecuteText_16.TextColor3 = Color3.fromRGB(255, 255, 255)
+ExecuteText_16.TextSize = 14.000
+
+LineBorder1_2.Name = "LineBorder1"
+LineBorder1_2.Parent = Games_2
+LineBorder1_2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+LineBorder1_2.Position = UDim2.new(-0.025641026, 0, 0.266203344, 0)
+LineBorder1_2.Size = UDim2.new(0, 298, 0, 2)
+
+LineBorder2_2.Name = "LineBorder2"
+LineBorder2_2.Parent = Games_2
+LineBorder2_2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+LineBorder2_2.Position = UDim2.new(-0.000161874807, 0, 0.581395328, 0)
+LineBorder2_2.Size = UDim2.new(0, 298, 0, 2)
+
+MM2.Name = "MM2"
+MM2.Parent = Games_2
+MM2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MM2.BackgroundTransparency = 1.000
+MM2.Position = UDim2.new(0.647358954, 0, 0.277255386, 0)
+MM2.Size = UDim2.new(0, 100, 0, 175)
+
+Icon_6.Name = "Icon"
+Icon_6.Parent = MM2
+Icon_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Icon_6.BorderSizePixel = 0
+Icon_6.Position = UDim2.new(0.0799999982, 0, 0.0514285713, 0)
+Icon_6.Size = UDim2.new(0, 83, 0, 83)
+Icon_6.Image = "rbxassetid://200659607"
+
+ScriptName_15.Name = "ScriptName"
+ScriptName_15.Parent = MM2
+ScriptName_15.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScriptName_15.BackgroundTransparency = 1.000
+ScriptName_15.Position = UDim2.new(-0.00999999978, 0, 0.508571446, 0)
+ScriptName_15.Size = UDim2.new(0, 100, 0, 49)
+ScriptName_15.Font = Enum.Font.GothamBlack
+ScriptName_15.Text = "MM2 Gui (Vynixiu)"
+ScriptName_15.TextColor3 = Color3.fromRGB(255, 255, 255)
+ScriptName_15.TextSize = 14.000
+ScriptName_15.TextWrapped = true
+
+Execute_13.Name = "Execute"
+Execute_13.Parent = MM2
+Execute_13.BackgroundColor3 = Color3.fromRGB(0, 170, 0)
+Execute_13.BackgroundTransparency = 1.000
+Execute_13.BorderSizePixel = 0
+Execute_13.Position = UDim2.new(0.0399999991, 0, 0.792276978, 0)
+Execute_13.Size = UDim2.new(0, 91, 0, 15)
+Execute_13.Font = Enum.Font.GothamBold
+Execute_13.Text = "Execute"
+Execute_13.TextColor3 = Color3.fromRGB(255, 255, 255)
+Execute_13.TextSize = 14.000
+Execute_13.MouseButton1Down:Connect(function()
+	loadstring(game:GetObjects("rbxassetid://4001118261")[1].Source)()
+end)
+
+BG_17.Name = "BG"
+BG_17.Parent = Execute_13
+BG_17.Active = true
+BG_17.AnchorPoint = Vector2.new(0.5, 0.5)
+BG_17.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BG_17.BackgroundTransparency = 1.000
+BG_17.Position = UDim2.new(0.5, 0, 0.5, 0)
+BG_17.Selectable = true
+BG_17.Size = UDim2.new(1, 0, 1, 0)
+BG_17.Image = "rbxassetid://3570695787"
+BG_17.ImageColor3 = Color3.fromRGB(0, 170, 0)
+BG_17.ScaleType = Enum.ScaleType.Slice
+BG_17.SliceCenter = Rect.new(100, 100, 100, 100)
+BG_17.SliceScale = 0.050
+
+ExecuteText_17.Name = "ExecuteText"
+ExecuteText_17.Parent = Execute_13
+ExecuteText_17.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ExecuteText_17.BackgroundTransparency = 1.000
+ExecuteText_17.Position = UDim2.new(0, 0, 0.0500000007, 0)
+ExecuteText_17.Size = UDim2.new(0, 91, 0, 14)
+ExecuteText_17.Font = Enum.Font.GothamBold
+ExecuteText_17.Text = "Execute"
+ExecuteText_17.TextColor3 = Color3.fromRGB(255, 255, 255)
+ExecuteText_17.TextSize = 14.000
+
+PrisonLife.Name = "PrisonLife"
+PrisonLife.Parent = Games_2
+PrisonLife.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+PrisonLife.BackgroundTransparency = 1.000
+PrisonLife.Position = UDim2.new(0, 0, 0.603339076, 0)
+PrisonLife.Size = UDim2.new(0, 300, 0, 97)
+
+Icon_7.Name = "Icon"
+Icon_7.Parent = PrisonLife
+Icon_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Icon_7.BorderSizePixel = 0
+Icon_7.Position = UDim2.new(0.0266666636, 0, 0.0720471293, 0)
+Icon_7.Size = UDim2.new(0, 83, 0, 83)
+Icon_7.Image = "rbxassetid://1866398656"
+
+Execute_v1_3.Name = "Execute_v1"
+Execute_v1_3.Parent = PrisonLife
+Execute_v1_3.BackgroundColor3 = Color3.fromRGB(0, 170, 0)
+Execute_v1_3.BackgroundTransparency = 1.000
+Execute_v1_3.BorderSizePixel = 0
+Execute_v1_3.Position = UDim2.new(0.676666677, 0, 0.109390378, 0)
+Execute_v1_3.Size = UDim2.new(0, 91, 0, 15)
+Execute_v1_3.Font = Enum.Font.GothamBold
+Execute_v1_3.Text = ""
+Execute_v1_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+Execute_v1_3.TextSize = 14.000
+Execute_v1_3.MouseButton1Down:Connect(function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/HeAMVgAA", true))()
+end)
+
+BG_18.Name = "BG"
+BG_18.Parent = Execute_v1_3
+BG_18.Active = true
+BG_18.AnchorPoint = Vector2.new(0.5, 0.5)
+BG_18.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BG_18.BackgroundTransparency = 1.000
+BG_18.Position = UDim2.new(0.5, 0, 0.5, 0)
+BG_18.Selectable = true
+BG_18.Size = UDim2.new(1, 0, 1, 0)
+BG_18.Image = "rbxassetid://3570695787"
+BG_18.ImageColor3 = Color3.fromRGB(0, 170, 0)
+BG_18.ScaleType = Enum.ScaleType.Slice
+BG_18.SliceCenter = Rect.new(100, 100, 100, 100)
+BG_18.SliceScale = 0.050
+
+ExecuteText_18.Name = "ExecuteText"
+ExecuteText_18.Parent = Execute_v1_3
+ExecuteText_18.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ExecuteText_18.BackgroundTransparency = 1.000
+ExecuteText_18.Position = UDim2.new(0, 0, 0.0500000007, 0)
+ExecuteText_18.Size = UDim2.new(0, 91, 0, 14)
+ExecuteText_18.Font = Enum.Font.GothamBold
+ExecuteText_18.Text = "<< Execute"
+ExecuteText_18.TextColor3 = Color3.fromRGB(255, 255, 255)
+ExecuteText_18.TextSize = 14.000
+
+Execute_v2_3.Name = "Execute_v2"
+Execute_v2_3.Parent = PrisonLife
+Execute_v2_3.BackgroundColor3 = Color3.fromRGB(0, 170, 0)
+Execute_v2_3.BackgroundTransparency = 1.000
+Execute_v2_3.BorderSizePixel = 0
+Execute_v2_3.Position = UDim2.new(0.330000013, 0, 0.58361721, 0)
+Execute_v2_3.Size = UDim2.new(0, 91, 0, 15)
+Execute_v2_3.Font = Enum.Font.GothamBold
+Execute_v2_3.Text = ""
+Execute_v2_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+Execute_v2_3.TextSize = 15.000
+Execute_v2_3.TextWrapped = true
+Execute_v2_3.MouseButton1Down:Connect(function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/Dq8SKFFU"))()
+end)
+
+BG_19.Name = "BG"
+BG_19.Parent = Execute_v2_3
+BG_19.Active = true
+BG_19.AnchorPoint = Vector2.new(0.5, 0.5)
+BG_19.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BG_19.BackgroundTransparency = 1.000
+BG_19.Position = UDim2.new(0.5, 0, 0.5, 0)
+BG_19.Selectable = true
+BG_19.Size = UDim2.new(1, 0, 1, 0)
+BG_19.Image = "rbxassetid://3570695787"
+BG_19.ImageColor3 = Color3.fromRGB(0, 170, 0)
+BG_19.ScaleType = Enum.ScaleType.Slice
+BG_19.SliceCenter = Rect.new(100, 100, 100, 100)
+BG_19.SliceScale = 0.050
+
+ExecuteText_19.Name = "ExecuteText"
+ExecuteText_19.Parent = Execute_v2_3
+ExecuteText_19.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ExecuteText_19.BackgroundTransparency = 1.000
+ExecuteText_19.Position = UDim2.new(0, 0, 0.0500000007, 0)
+ExecuteText_19.Size = UDim2.new(0, 91, 0, 14)
+ExecuteText_19.Font = Enum.Font.GothamBold
+ExecuteText_19.Text = "Execute >>"
+ExecuteText_19.TextColor3 = Color3.fromRGB(255, 255, 255)
+ExecuteText_19.TextSize = 14.000
+
+ScriptName_v1.Name = "ScriptName_v1"
+ScriptName_v1.Parent = PrisonLife
+ScriptName_v1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScriptName_v1.BackgroundTransparency = 1.000
+ScriptName_v1.Position = UDim2.new(0.320000023, 0, -0.0893666893, 0)
+ScriptName_v1.Size = UDim2.new(0, 100, 0, 49)
+ScriptName_v1.Font = Enum.Font.GothamBlack
+ScriptName_v1.Text = "Vynixius' Prison Life GUI"
+ScriptName_v1.TextColor3 = Color3.fromRGB(255, 255, 255)
+ScriptName_v1.TextSize = 14.000
+ScriptName_v1.TextWrapped = true
+
+ScriptName_v2.Name = "ScriptName_v2"
+ScriptName_v2.Parent = PrisonLife
+ScriptName_v2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScriptName_v2.BackgroundTransparency = 1.000
+ScriptName_v2.Position = UDim2.new(0.646666646, 0, 0.436406493, 0)
+ScriptName_v2.Size = UDim2.new(0, 100, 0, 49)
+ScriptName_v2.Font = Enum.Font.GothamBlack
+ScriptName_v2.Text = "jake11price's PrisonBreaker v1.6"
+ScriptName_v2.TextColor3 = Color3.fromRGB(255, 255, 255)
+ScriptName_v2.TextSize = 13.000
+ScriptName_v2.TextWrapped = true
+
+Hubs_2.Name = "Hubs"
+Hubs_2.Parent = Menu
+Hubs_2.Active = true
+Hubs_2.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+Hubs_2.Size = UDim2.new(0, 312, 0, 201)
+Hubs_2.Visible = false
+
+AncientHub.Name = "AncientHub"
+AncientHub.Parent = Hubs_2
+AncientHub.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AncientHub.BackgroundTransparency = 1.000
+AncientHub.Size = UDim2.new(0, 300, 0, 97)
+
+Icon_8.Name = "Icon"
+Icon_8.Parent = AncientHub
+Icon_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Icon_8.BorderSizePixel = 0
+Icon_8.Position = UDim2.new(0.0266666636, 0, 0.0720471293, 0)
+Icon_8.Size = UDim2.new(0, 83, 0, 83)
+Icon_8.Image = "rbxassetid://6225431560"
+
+Execute_14.Name = "Execute"
+Execute_14.Parent = AncientHub
+Execute_14.BackgroundColor3 = Color3.fromRGB(0, 170, 0)
+Execute_14.BackgroundTransparency = 1.000
+Execute_14.BorderSizePixel = 0
+Execute_14.Position = UDim2.new(0.676666677, 0, 0.109390378, 0)
+Execute_14.Size = UDim2.new(0, 91, 0, 15)
+Execute_14.Font = Enum.Font.GothamBold
+Execute_14.Text = ""
+Execute_14.TextColor3 = Color3.fromRGB(255, 255, 255)
+Execute_14.TextSize = 14.000
+Execute_14.MouseButton1Down:Connect(function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/vpUPBKAP"))()
+end)
+
+BG_20.Name = "BG"
+BG_20.Parent = Execute_14
+BG_20.Active = true
+BG_20.AnchorPoint = Vector2.new(0.5, 0.5)
+BG_20.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BG_20.BackgroundTransparency = 1.000
+BG_20.Position = UDim2.new(0.5, 0, 0.5, 0)
+BG_20.Selectable = true
+BG_20.Size = UDim2.new(1, 0, 1, 0)
+BG_20.Image = "rbxassetid://3570695787"
+BG_20.ImageColor3 = Color3.fromRGB(0, 170, 0)
+BG_20.ScaleType = Enum.ScaleType.Slice
+BG_20.SliceCenter = Rect.new(100, 100, 100, 100)
+BG_20.SliceScale = 0.050
+
+ExecuteText_20.Name = "ExecuteText"
+ExecuteText_20.Parent = Execute_14
+ExecuteText_20.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ExecuteText_20.BackgroundTransparency = 1.000
+ExecuteText_20.Position = UDim2.new(0, 0, 0.0500000007, 0)
+ExecuteText_20.Size = UDim2.new(0, 91, 0, 14)
+ExecuteText_20.Font = Enum.Font.GothamBold
+ExecuteText_20.Text = "Execute"
+ExecuteText_20.TextColor3 = Color3.fromRGB(255, 255, 255)
+ExecuteText_20.TextSize = 14.000
+
+ScriptName_16.Name = "ScriptName"
+ScriptName_16.Parent = AncientHub
+ScriptName_16.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScriptName_16.BackgroundTransparency = 1.000
+ScriptName_16.Position = UDim2.new(0.283333331, 0, -0.0687481388, 0)
+ScriptName_16.Size = UDim2.new(0, 100, 0, 49)
+ScriptName_16.Font = Enum.Font.GothamBlack
+ScriptName_16.Text = "Ancient Hub"
+ScriptName_16.TextColor3 = Color3.fromRGB(255, 255, 255)
+ScriptName_16.TextSize = 14.000
+ScriptName_16.TextWrapped = true
+
+ScriptDesc.Name = "ScriptDesc"
+ScriptDesc.Parent = AncientHub
+ScriptDesc.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScriptDesc.BackgroundTransparency = 1.000
+ScriptDesc.Position = UDim2.new(0.320000023, 0, 0.292076498, 0)
+ScriptDesc.Size = UDim2.new(0, 198, 0, 64)
+ScriptDesc.Font = Enum.Font.GothamBlack
+ScriptDesc.Text = "Ancient Hub is a FE Script Hub full of packed FE scripts. Hats are listed in their Discord: discord.gg/V78CZ3maSa"
+ScriptDesc.TextColor3 = Color3.fromRGB(255, 255, 255)
+ScriptDesc.TextSize = 12.000
+ScriptDesc.TextWrapped = true
+ScriptDesc.TextXAlignment = Enum.TextXAlignment.Left
+ScriptDesc.TextYAlignment = Enum.TextYAlignment.Top
+
+LineBorder1_3.Name = "LineBorder1"
+LineBorder1_3.Parent = Hubs_2
+LineBorder1_3.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+LineBorder1_3.Position = UDim2.new(-0.00641025649, 0, 0.247088879, 0)
+LineBorder1_3.Size = UDim2.new(0, 298, 0, 2)
+
+LineBorder2_3.Name = "LineBorder2"
+LineBorder2_3.Parent = Hubs_2
+LineBorder2_3.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+LineBorder2_3.Position = UDim2.new(-0.00336700329, 0, 0.495332479, 0)
+LineBorder2_3.Size = UDim2.new(0, 298, 0, 2)
+
+LineBorder3.Name = "LineBorder3"
+LineBorder3.Parent = Hubs_2
+LineBorder3.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+LineBorder3.Position = UDim2.new(-0.016187517, 0, 0.750979483, 0)
+LineBorder3.Size = UDim2.new(0, 298, 0, 2)
+
+NullwareHub.Name = "NullwareHub"
+NullwareHub.Parent = Hubs_2
+NullwareHub.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+NullwareHub.BackgroundTransparency = 1.000
+NullwareHub.Position = UDim2.new(0, 0, 0.242950112, 0)
+NullwareHub.Size = UDim2.new(0, 300, 0, 97)
+
+Icon_9.Name = "Icon"
+Icon_9.Parent = NullwareHub
+Icon_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Icon_9.BackgroundTransparency = 1.000
+Icon_9.BorderSizePixel = 0
+Icon_9.Position = UDim2.new(0.00666666403, 0, 0.0617378503, 0)
+Icon_9.Size = UDim2.new(0, 83, 0, 83)
+Icon_9.Image = "rbxassetid://6225508741"
+
+Execute_15.Name = "Execute"
+Execute_15.Parent = NullwareHub
+Execute_15.BackgroundColor3 = Color3.fromRGB(0, 170, 0)
+Execute_15.BackgroundTransparency = 1.000
+Execute_15.BorderSizePixel = 0
+Execute_15.Position = UDim2.new(0.676666677, 0, 0.109390378, 0)
+Execute_15.Size = UDim2.new(0, 91, 0, 15)
+Execute_15.Font = Enum.Font.GothamBold
+Execute_15.Text = ""
+Execute_15.TextColor3 = Color3.fromRGB(255, 255, 255)
+Execute_15.TextSize = 14.000
+Execute_15.MouseButton1Down:Connect(function()
+	loadstring(game:HttpGet("https://paste.ee/r/lGZMc/0"))()
+end)
+
+BG_21.Name = "BG"
+BG_21.Parent = Execute_15
+BG_21.Active = true
+BG_21.AnchorPoint = Vector2.new(0.5, 0.5)
+BG_21.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BG_21.BackgroundTransparency = 1.000
+BG_21.Position = UDim2.new(0.5, 0, 0.5, 0)
+BG_21.Selectable = true
+BG_21.Size = UDim2.new(1, 0, 1, 0)
+BG_21.Image = "rbxassetid://3570695787"
+BG_21.ImageColor3 = Color3.fromRGB(0, 170, 0)
+BG_21.ScaleType = Enum.ScaleType.Slice
+BG_21.SliceCenter = Rect.new(100, 100, 100, 100)
+BG_21.SliceScale = 0.050
+
+ExecuteText_21.Name = "ExecuteText"
+ExecuteText_21.Parent = Execute_15
+ExecuteText_21.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ExecuteText_21.BackgroundTransparency = 1.000
+ExecuteText_21.Position = UDim2.new(0, 0, 0.0500000007, 0)
+ExecuteText_21.Size = UDim2.new(0, 91, 0, 14)
+ExecuteText_21.Font = Enum.Font.GothamBold
+ExecuteText_21.Text = "Execute"
+ExecuteText_21.TextColor3 = Color3.fromRGB(255, 255, 255)
+ExecuteText_21.TextSize = 14.000
+
+ScriptName_17.Name = "ScriptName"
+ScriptName_17.Parent = NullwareHub
+ScriptName_17.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScriptName_17.BackgroundTransparency = 1.000
+ScriptName_17.Position = UDim2.new(0.283333331, 0, -0.0687481388, 0)
+ScriptName_17.Size = UDim2.new(0, 100, 0, 49)
+ScriptName_17.Font = Enum.Font.GothamBlack
+ScriptName_17.Text = "Nullware Hub"
+ScriptName_17.TextColor3 = Color3.fromRGB(255, 255, 255)
+ScriptName_17.TextSize = 14.000
+ScriptName_17.TextWrapped = true
+
+ScriptDesc_2.Name = "ScriptDesc"
+ScriptDesc_2.Parent = NullwareHub
+ScriptDesc_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScriptDesc_2.BackgroundTransparency = 1.000
+ScriptDesc_2.Position = UDim2.new(0.320000023, 0, 0.292076498, 0)
+ScriptDesc_2.Size = UDim2.new(0, 198, 0, 64)
+ScriptDesc_2.Font = Enum.Font.GothamBlack
+ScriptDesc_2.Text = "Nullware Hub is a FE Script Hub with LOTS of opportunites. With Nullware Reanimate, you can do anything! "
+ScriptDesc_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+ScriptDesc_2.TextSize = 12.000
+ScriptDesc_2.TextWrapped = true
+ScriptDesc_2.TextXAlignment = Enum.TextXAlignment.Left
+ScriptDesc_2.TextYAlignment = Enum.TextYAlignment.Top
+
+OwlHub.Name = "OwlHub"
+OwlHub.Parent = Hubs_2
+OwlHub.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+OwlHub.BackgroundTransparency = 1.000
+OwlHub.Position = UDim2.new(-0.012820513, 0, 0.508388102, 0)
+OwlHub.Size = UDim2.new(0, 300, 0, 97)
+
+Icon_10.Name = "Icon"
+Icon_10.Parent = OwlHub
+Icon_10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Icon_10.BackgroundTransparency = 1.000
+Icon_10.BorderSizePixel = 0
+Icon_10.Position = UDim2.new(0.0270000007, 0, 0.061999999, 0)
+Icon_10.Size = UDim2.new(0, 83, 0, 83)
+Icon_10.Image = "rbxassetid://6225529010"
+
+Execute_16.Name = "Execute"
+Execute_16.Parent = OwlHub
+Execute_16.BackgroundColor3 = Color3.fromRGB(0, 170, 0)
+Execute_16.BackgroundTransparency = 1.000
+Execute_16.BorderSizePixel = 0
+Execute_16.Position = UDim2.new(0.676666677, 0, 0.109390378, 0)
+Execute_16.Size = UDim2.new(0, 91, 0, 15)
+Execute_16.Font = Enum.Font.GothamBold
+Execute_16.TextColor3 = Color3.fromRGB(255, 255, 255)
+Execute_16.TextSize = 14.000
+Execute_16.MouseButton1Down:Connect(function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/GtudyLtE"))()
+end)
+
+BG_22.Name = "BG"
+BG_22.Parent = Execute_16
+BG_22.Active = true
+BG_22.AnchorPoint = Vector2.new(0.5, 0.5)
+BG_22.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BG_22.BackgroundTransparency = 1.000
+BG_22.Position = UDim2.new(0.5, 0, 0.5, 0)
+BG_22.Selectable = true
+BG_22.Size = UDim2.new(1, 0, 1, 0)
+BG_22.Image = "rbxassetid://3570695787"
+BG_22.ImageColor3 = Color3.fromRGB(0, 170, 0)
+BG_22.ScaleType = Enum.ScaleType.Slice
+BG_22.SliceCenter = Rect.new(100, 100, 100, 100)
+BG_22.SliceScale = 0.050
+
+ExecuteText_22.Name = "ExecuteText"
+ExecuteText_22.Parent = Execute_16
+ExecuteText_22.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ExecuteText_22.BackgroundTransparency = 1.000
+ExecuteText_22.Position = UDim2.new(0, 0, 0.0500000007, 0)
+ExecuteText_22.Size = UDim2.new(0, 91, 0, 14)
+ExecuteText_22.Font = Enum.Font.GothamBold
+ExecuteText_22.Text = "Execute"
+ExecuteText_22.TextColor3 = Color3.fromRGB(255, 255, 255)
+ExecuteText_22.TextSize = 14.000
+
+ScriptName_18.Name = "ScriptName"
+ScriptName_18.Parent = OwlHub
+ScriptName_18.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScriptName_18.BackgroundTransparency = 1.000
+ScriptName_18.Position = UDim2.new(0.25666666, 0, -0.109985247, 0)
+ScriptName_18.Size = UDim2.new(0, 100, 0, 49)
+ScriptName_18.Font = Enum.Font.GothamBlack
+ScriptName_18.Text = "Owl Hub"
+ScriptName_18.TextColor3 = Color3.fromRGB(255, 255, 255)
+ScriptName_18.TextSize = 14.000
+ScriptName_18.TextWrapped = true
+
+ScriptDesc_3.Name = "ScriptDesc"
+ScriptDesc_3.Parent = OwlHub
+ScriptDesc_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScriptDesc_3.BackgroundTransparency = 1.000
+ScriptDesc_3.Position = UDim2.new(0.335000008, 0, 0.291999996, 0)
+ScriptDesc_3.Size = UDim2.new(0, 198, 0, 64)
+ScriptDesc_3.Font = Enum.Font.GothamBlack
+ScriptDesc_3.Text = "Owl Hub is a hub with FPS mods. This hub is mostly for games Like Arsenal and Phantom Forces."
+ScriptDesc_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+ScriptDesc_3.TextSize = 12.000
+ScriptDesc_3.TextWrapped = true
+ScriptDesc_3.TextXAlignment = Enum.TextXAlignment.Left
+ScriptDesc_3.TextYAlignment = Enum.TextYAlignment.Top
+
+MoreToCome.Name = "MoreToCome"
+MoreToCome.Parent = Hubs_2
+MoreToCome.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MoreToCome.BackgroundTransparency = 1.000
+MoreToCome.Position = UDim2.new(0.175731674, 0, 0.792194128, 0)
+MoreToCome.Size = UDim2.new(0, 200, 0, 50)
+MoreToCome.Font = Enum.Font.GothamSemibold
+MoreToCome.Text = "More to come... :)"
+MoreToCome.TextColor3 = Color3.fromRGB(255, 255, 255)
+MoreToCome.TextSize = 18.000
+MoreToCome.TextWrapped = true
+
+Title.Name = "Title"
+Title.Parent = Core
+Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title.BackgroundTransparency = 1.000
+Title.Position = UDim2.new(-0.000528936274, 0, 0.00183005631, 0)
+Title.Size = UDim2.new(0, 453, 0, 27)
+Title.Image = "rbxassetid://3570695787"
+Title.ImageColor3 = Color3.fromRGB(80, 80, 80)
+Title.ScaleType = Enum.ScaleType.Slice
+Title.SliceCenter = Rect.new(100, 100, 100, 100)
+Title.SliceScale = 0.050
+
+TitleName.Name = "TitleName"
+TitleName.Parent = Title
+TitleName.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TitleName.BackgroundTransparency = 1.000
+TitleName.Position = UDim2.new(-0.0485651232, 0, -0.0370370373, 0)
+TitleName.Size = UDim2.new(0, 200, 0, 27)
+TitleName.Font = Enum.Font.GothamBold
+TitleName.Text = "Fuckware Hub v1.0.0"
+TitleName.TextColor3 = Color3.fromRGB(255, 255, 255)
+TitleName.TextSize = 20.000
+TitleName.TextWrapped = true
+TitleName.TextXAlignment = "Right"
+
+Toggle.Name = "Toggle"
+Toggle.Parent = Title
+Toggle.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+Toggle.BackgroundTransparency = 1.000
+Toggle.BorderSizePixel = 0
+Toggle.Position = UDim2.new(0.938189805, 0, 0.0740740374, 0)
+Toggle.Size = UDim2.new(0, 22, 0, 22)
+Toggle.Font = Enum.Font.SourceSans
+Toggle.TextColor3 = Color3.fromRGB(0, 0, 0)
+Toggle.TextSize = 14.000
+Toggle.Text = " "
+Toggle.MouseButton1Down:Connect(function()
+	local visual = Color
+	local toggled = Toggled
+
+
+	-- Function
+	Toggle.MouseButton1Down:Connect(function()
+		local frame = Toggle.Parent.Parent.Main
+		if frame.Visible == false then
+			frame.Visible = true
+			toggled = false
+             Core.Active = true
+             Core.Selectable = true
+             Core.Draggable = true
+			visual.ImageColor3 = Color3.new(0, 0.333333, 0)
+		elseif frame.Visible == true then
+			frame.Visible = false
+			toggled = true
+            Core.Active = false
+            Core.Selectable = false
+            Core.Draggable = false
+			visual.ImageColor3 = Color3.new(0.666667, 0, 0)
+
+		end
+	end)
+
+	-- Extra
+	Toggle.MouseEnter:Connect(function()
+		if toggled == false then
+			visual.ImageColor3 = Color3.new(0, 0.333333, 0)
+		elseif toggled == true then
+			visual.ImageColor3 = Color3.new(0.666667, 0, 0)
+		end
+	end)
+	Toggle.MouseLeave:Connect(function()
+		if toggled == false then
+			visual.ImageColor3 = Color3.new(0, 255, 0)
+		elseif toggled == true then
+			visual.ImageColor3 = Color3.new(1, 0, 0)
+		end
+	end)
+	end)
+
+Color.Name = "Color"
+Color.Parent = Toggle
+Color.Active = true
+Color.AnchorPoint = Vector2.new(0.5, 0.5)
+Color.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Color.BackgroundTransparency = 1.000
+Color.Position = UDim2.new(0.499010235, 0, 0.5, 0)
+Color.Selectable = true
+Color.Size = UDim2.new(1, 0, 1, 0)
+Color.Image = "rbxassetid://3570695787"
+Color.ImageColor3 = Color3.fromRGB(0, 255, 0)
+Color.ScaleType = Enum.ScaleType.Slice
+Color.SliceCenter = Rect.new(100, 100, 100, 100)
+Color.SliceScale = 0.050
+
+Category.Name = "Category"
+Category.Parent = Categories
+Category.Archivable = true
+Category.Value = 0
+
+Toggled.Name = "Toggled"
+Toggled.Parent = Color
+Toggled.Archivable = true
+Toggled.Value = false
