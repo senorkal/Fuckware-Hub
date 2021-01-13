@@ -10824,7 +10824,7 @@ Execute_10.Font = Enum.Font.GothamBold
 Execute_10.Text = "Achromatic Disabled."
 Execute_10.TextColor3 = Color3.fromRGB(255, 255, 255)
 Execute_10.TextSize = 14.000
---[ Execute_10.MouseButton1Down:Connect(function()
+Execute_10.MouseButton1Down:Connect(function()
 	local textboxes = {
 		textbox1 = AccessoryName1,
 		textbox2 = AccessoryName2,
@@ -10979,10 +10979,9 @@ Execute_10.TextSize = 14.000
 	end
 
 
-	for i,v in pairs(accessoryinputs) do
-		if v == "" or v == "nil" == false then
+	
+	if accessoryinputs[1] == "nil" or "" and accessoryinputs[2] == "nil" or "" and accessoryinputs[3] == "nil" or "" and accessoryinputs[4] == "nil" or "" and accessoryinputs[5] == "nil" or "" and accessoryinputs[6] == "nil" or "" and == false then
 			--script
-			loadstring(game:HttpGet("https://pastebin.com/raw/fXwQRn7f"))()
 			game:GetService("RunService").RenderStepped:Connect(function()
     setsimulationradius(math.huge)
 end)
@@ -11936,37 +11935,14 @@ local rightWing = NewInstance("Model",wingModel,{Name='Right'})
 local leftWing = NewInstance("Model",wingModel,{Name='Left'})
 
 local MPASword = {}
--- Hat 1
-if Char[accessoryinputs.accessoryinput1]:IsA("Accessory") and Char[accessoryinputs.accessoryinput1].Name:find(accessoryinputs.accessoryinput1) and Char[accessoryinputs.accessoryinput1].Handle.Size == Vector3.new(4,4,1) then
-	table.insert(MPASword,accessoryinputs.accessoryinput1)
+for _,v in pairs(Char:GetChildren()) do
+	if v:IsA("Accessory") and v.Name:find("MeshPartAccessory") and v.Handle.Size == Vector3.new(4,4,1) then
+		table.insert(MPASword,v)
+	end
 end
 
--- Hat 2
-if Char[accessoryinputs.accessoryinput2]:IsA("Accessory") and Char[accessoryinputs.accessoryinput2].Name:find(accessoryinputs.accessoryinput2) and Char[accessoryinputs.accessoryinput2].Handle.Size == Vector3.new(4,4,1) then
-	table.insert(MPASword,accessoryinputs.accessoryinput2)
-end
-
--- Hat 3
-if Char[accessoryinputs.accessoryinput3]:IsA("Accessory") and Char[accessoryinputs.accessoryinput3].Name:find(accessoryinputs.accessoryinput3) and Char[accessoryinputs.accessoryinput3].Handle.Size == Vector3.new(4,4,1) then
-	table.insert(MPASword,accessoryinputs.accessoryinput3)
-end
-
--- Hat 4
-if Char[accessoryinputs.accessoryinput4]:IsA("Accessory") and Char[accessoryinputs.accessoryinput4].Name:find(accessoryinputs.accessoryinput4) and Char[accessoryinputs.accessoryinput4].Handle.Size == Vector3.new(4,4,1) then
-	table.insert(MPASword,accessoryinputs.accessoryinput4)
-end
-
--- Hat 5
-if Char[accessoryinputs.accessoryinput5]:IsA("Accessory") and Char[accessoryinputs.accessoryinput5].Name:find(accessoryinputs.accessoryinput5) and Char[accessoryinputs.accessoryinput5].Handle.Size == Vector3.new(4,4,1) then
-	table.insert(MPASword,accessoryinputs.accessoryinput5)
-end
-
--- Hat 6
-if Char[accessoryinputs.accessoryinput6]:IsA("Accessory") and Char[accessoryinputs.accessoryinput6].Name:find(accessoryinputs.accessoryinput6) and Char[accessoryinputs.accessoryinput6].Handle.Size == Vector3.new(4,4,1) then
-	table.insert(MPASword,accessoryinputs.accessoryinput6)
-end
 local LWP1 = WingPiece:Clone();
-if MPASword[1] then
+if Char:FindFirstChild(accessoryinputs.accessoryinput1) then
 	for _,v in pairs(LWP1:GetChildren()) do
 		if v:IsA("BasePart") then
 			v.Transparency = 1
@@ -11975,8 +11951,7 @@ if MPASword[1] then
 	local athp = Instance.new("Attachment",LWP1.PrimaryPart)
 	local atho = Instance.new("Attachment",LWP1.PrimaryPart)
 
-	local HatChoice = MPASword[1]
-	print(MPASword[1].Handle.Name)
+	local HatChoice = Char:FindFirstChild(accessoryinputs.accessoryinput1)
 	HatChoice.Handle:FindFirstChildOfClass("AlignPosition").Attachment1 = athp
 	HatChoice.Handle:FindFirstChildOfClass("AlignOrientation").Attachment1 = atho
 
@@ -11986,7 +11961,7 @@ if MPASword[1] then
 end
 LWP1.Parent = leftWing
 local LWP2 = WingPiece:Clone();
-if MPASword[1] then
+if Char:FindFirstChild(accessoryinputs.accessoryinput2) then
 	for _,v in pairs(LWP2:GetChildren()) do
 		if v:IsA("BasePart") then
 			v.Transparency = 1
@@ -11995,7 +11970,7 @@ if MPASword[1] then
 	local athp = Instance.new("Attachment",LWP2.PrimaryPart)
 	local atho = Instance.new("Attachment",LWP2.PrimaryPart)
 
-	local HatChoice = MPASword[1]
+	local HatChoice = Char:FindFirstChild(accessoryinputs.accessoryinput2)
 	HatChoice.Handle:FindFirstChildOfClass("AlignPosition").Attachment1 = athp
 	HatChoice.Handle:FindFirstChildOfClass("AlignOrientation").Attachment1 = atho
 
@@ -12005,7 +11980,7 @@ if MPASword[1] then
 end
 LWP2.Parent = leftWing
 local LWP3 = WingPiece:Clone();
-if Char:FindFirstChild("BladeMasterAccessory") then
+if Char:FindFirstChild(accessoryinputs.accessoryinput3) then
 	for _,v in pairs(LWP3:GetChildren()) do
 		if v:IsA("BasePart") then
 			v.Transparency = 1
@@ -12014,7 +11989,7 @@ if Char:FindFirstChild("BladeMasterAccessory") then
 	local athp = Instance.new("Attachment",LWP3.PrimaryPart)
 	local atho = Instance.new("Attachment",LWP3.PrimaryPart)
 
-	local HatChoice = Char:FindFirstChild("BladeMasterAccessory")
+	local HatChoice = Char:FindFirstChild(accessoryinputs.accessoryinput3)
 	HatChoice.Handle:FindFirstChildOfClass("AlignPosition").Attachment1 = athp
 	HatChoice.Handle:FindFirstChildOfClass("AlignOrientation").Attachment1 = atho
 
@@ -12023,7 +11998,7 @@ if Char:FindFirstChild("BladeMasterAccessory") then
 end
 LWP3.Parent = leftWing
 local RWP1 = WingPiece:Clone();
-if MPASword[1] then
+if Char:FindFirstChild(accessoryinputs.accessoryinput4) then
 	for _,v in pairs(RWP1:GetChildren()) do
 		if v:IsA("BasePart") then
 			v.Transparency = 1
@@ -12032,7 +12007,7 @@ if MPASword[1] then
 	local athp = Instance.new("Attachment",RWP1.PrimaryPart)
 	local atho = Instance.new("Attachment",RWP1.PrimaryPart)
 
-	local HatChoice = MPASword[1]
+	local HatChoice = Char:FindFirstChild(accessoryinputs.accessoryinput4)
 	HatChoice.Handle:FindFirstChildOfClass("AlignPosition").Attachment1 = athp
 	HatChoice.Handle:FindFirstChildOfClass("AlignOrientation").Attachment1 = atho
 
@@ -12042,7 +12017,7 @@ if MPASword[1] then
 end
 RWP1.Parent = rightWing
 local RWP2 = WingPiece:Clone();
-if MPASword[1] then
+if Char:FindFirstChild(accessoryinputs.accessoryinput5) then
 	for _,v in pairs(RWP2:GetChildren()) do
 		if v:IsA("BasePart") then
 			v.Transparency = 1
@@ -12051,7 +12026,7 @@ if MPASword[1] then
 	local athp = Instance.new("Attachment",RWP2.PrimaryPart)
 	local atho = Instance.new("Attachment",RWP2.PrimaryPart)
 
-	local HatChoice = MPASword[1]
+	local HatChoice = Char:FindFirstChild(accessoryinputs.accessoryinput5)
 	HatChoice.Handle:FindFirstChildOfClass("AlignPosition").Attachment1 = athp
 	HatChoice.Handle:FindFirstChildOfClass("AlignOrientation").Attachment1 = atho
 
@@ -12061,7 +12036,7 @@ if MPASword[1] then
 end
 RWP2.Parent = rightWing
 local RWP3 = WingPiece:Clone();
-if Char:FindFirstChild("ShadowBladeMasterAccessory") then
+if Char:FindFirstChild(accessoryinputs.accessoryinput6) then
 	for _,v in pairs(RWP3:GetChildren()) do
 		if v:IsA("BasePart") then
 			v.Transparency = 1
@@ -12070,7 +12045,7 @@ if Char:FindFirstChild("ShadowBladeMasterAccessory") then
 	local athp = Instance.new("Attachment",RWP3.PrimaryPart)
 	local atho = Instance.new("Attachment",RWP3.PrimaryPart)
 
-	local HatChoice = Char:FindFirstChild("ShadowBladeMasterAccessory")
+	local HatChoice = Char:FindFirstChild(accessoryinputs.accessoryinput6)
 	HatChoice.Handle:FindFirstChildOfClass("AlignPosition").Attachment1 = athp
 	HatChoice.Handle:FindFirstChildOfClass("AlignOrientation").Attachment1 = atho
 
@@ -12752,7 +12727,7 @@ while true do
 	local rhit,rpos = workspace:FindPartOnRayWithIgnoreList(Ray.new(RLeg.CFrame.p,((CFrame.new(RLeg.Position,RLeg.Position - Vector3.new(0,1,0))).lookVector).unit * (2)), {Effects,Char,workspace[Player.Name]})
 	if(Mode=='Troubadour' and IsVaporwave(getMode'Troubadour'.Music))then
 		vaporwaveMode=true
-		text.Text='Ｖａｐｏｒｗａｖｅ'
+		text.Text='Vaporwave'
 		WingAnim='NebG3'
 	else
 		if(Mode=='Troubadour')then
@@ -13222,14 +13197,13 @@ while true do
 			hue;
 		}
 	end
+end
 	ExecuteText_10.Text = "Executed!"
 	wait(2)
-	ExecuteText_10.Text = "Execute"
-end		
+	ExecuteText_10.Text = "Execute"		
 end
 end
 end)
-]]--
 
 BG_10.Name = "BG"
 BG_10.Parent = Execute_10
