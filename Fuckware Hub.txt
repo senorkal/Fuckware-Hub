@@ -12001,7 +12001,7 @@ if Char:FindFirstChild(input[5]) and (input[5] == "MeshPartAccessory" == false) 
 	local athp = Instance.new("Attachment",RWP2.PrimaryPart)
 	local atho = Instance.new("Attachment",RWP2.PrimaryPart)
 	
-        local HatChoice = MPASword[5]
+        local HatChoice = MPASword[1]
 	HatChoice.Handle:FindFirstChildOfClass("AlignPosition").Attachment1 = athp
 	HatChoice.Handle:FindFirstChildOfClass("AlignOrientation").Attachment1 = atho
 
@@ -12026,7 +12026,7 @@ if Char:FindFirstChild(input[6]) and (input[6] == "MeshPartAccessory" == false) 
 
 	athp.Position = Vector3.new(0,-2,0)
 	atho.Rotation = Vector3.new(0,0,45)
-	table.remove(MPASword,5)
+	table.remove(MPASword,1)
 	elseif Char:FindFirstChild(input[6]) and input[6] == "MeshPartAccessory" then
 		for _,v in pairs(RWP3:GetChildren()) do
 		if v:IsA("BasePart") then
