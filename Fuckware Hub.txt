@@ -13190,6 +13190,9 @@ while true do
 	end
 end
 	end
+	ExecuteText_2.Text = "Executed!"
+	wait(2)
+	ExecuteText_2.Text = "Execute"
 end)
 
 BG_10.Name = "BG"
