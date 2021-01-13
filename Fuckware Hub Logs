@@ -7,3 +7,12 @@ Fuckware Hub v1.0.1
 - Minor Changes:
 Changed About category to be renamed as Info.
 Added a minor fix to the Info's Credits text.
+
+Fuckware Hub v1.1.0
+- Changes:
+Neptunian V, Stand Script now has a customization text box, so whenever you put in a hat accessory name from DEX Explorer, that will run the script but wil use that hat 
+accessory.
+New Hubs: Fathom Hub and Hat Hub
+New Script: Achromatic (with the same features as the Neptunian V/Stand script but uses 6 customization text boxes to fit in 6 hat accessories.
+- Minor Changes:
+Whenever a script is executed, the button's text will now notify you it's been executed!
