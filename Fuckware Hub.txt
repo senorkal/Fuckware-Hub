@@ -10821,10 +10821,10 @@ Execute_10.BorderSizePixel = 0
 Execute_10.Position = UDim2.new(0.0400103331, 0, 1.94575834, 0)
 Execute_10.Size = UDim2.new(0, 263, 0, 24)
 Execute_10.Font = Enum.Font.GothamBold
-Execute_10.Text = "Execute"
+Execute_10.Text = "Achromatic Disabled."
 Execute_10.TextColor3 = Color3.fromRGB(255, 255, 255)
 Execute_10.TextSize = 14.000
-Execute_10.MouseButton1Down:Connect(function()
+--[ Execute_10.MouseButton1Down:Connect(function()
 	local textboxes = {
 		textbox1 = AccessoryName1,
 		textbox2 = AccessoryName2,
@@ -13229,6 +13229,7 @@ end
 end
 end
 end)
+]]--
 
 BG_10.Name = "BG"
 BG_10.Parent = Execute_10
