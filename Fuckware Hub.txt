@@ -13590,9 +13590,9 @@ Execute_v1.TextColor3 = Color3.fromRGB(255, 255, 255)
 Execute_v1.TextSize = 14.000
 Execute_v1.MouseButton1Down:Connect(function()
 	loadstring(game:GetObjects("rbxassetid://1461971147")[1].Source)()
-	ExecuteText_v1.Text = "Executed!"
+	ExecuteText_14.Text = "Executed!"
 	wait(2)
-	ExecuteText_v1.Text = "Execute"
+	ExecuteText_14.Text = "Execute"
 end)
 
 BG_14.Name = "BG"
@@ -13634,9 +13634,9 @@ Execute_v2.TextColor3 = Color3.fromRGB(255, 255, 255)
 Execute_v2.TextSize = 14.000
 Execute_v2.MouseButton1Down:Connect(function()
 	loadstring(game:HttpGet("https://pastebin.com/raw/jC64JpPh"))()
-	ExecuteText_v2.Text = "Executed!"
+	ExecuteText_15.Text = "Executed!"
 	wait(2)
-	ExecuteText_v2.Text = "Execute"
+	ExecuteText_15.Text = "Execute"
 end)
 
 BG_15.Name = "BG"
