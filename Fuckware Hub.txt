@@ -2677,7 +2677,7 @@ Execute_3.MouseButton1Down:Connect(function()
 				wait(0.5)
 			end
 			ExecuteText_3.Text = "Executed!"
-	                wait(2)
+			wait(2)
 			ExecuteText_3.Text = "Execute"
 		else
 			ExecuteText_3.Text = "Error!"
@@ -9039,7 +9039,6 @@ ss.Disabled=false]]
 						local bp = Create("BodyPosition")({
 							P = 2000,
 							D = 100,
-							maxForce = Vector3.new(math.huge, math.huge, math.huge),
 							position = hit.Parent.Torso.Position,
 							Parent = hit.Parent.Torso
 						})
@@ -10821,168 +10820,62 @@ Execute_10.BorderSizePixel = 0
 Execute_10.Position = UDim2.new(0.0400103331, 0, 1.94575834, 0)
 Execute_10.Size = UDim2.new(0, 263, 0, 24)
 Execute_10.Font = Enum.Font.GothamBold
-Execute_10.Text = "Achromatic Disabled."
+Execute_10.Text = ""
 Execute_10.TextColor3 = Color3.fromRGB(255, 255, 255)
 Execute_10.TextSize = 14.000
+local textboxes = {
+	AccessoryName1,
+	AccessoryName2,
+	AccessoryName3,
+	AccessoryName4,
+	AccessoryName5,
+	AccessoryName6
+}
+
+local input = {}
+inputs = 0
+
 Execute_10.MouseButton1Down:Connect(function()
-	local textboxes = {
-		textbox1 = AccessoryName1,
-		textbox2 = AccessoryName2,
-		textbox3 = AccessoryName3,
-		textbox4 = AccessoryName4,
-		textbox5 = AccessoryName5,
-		textbox6 = AccessoryName6
-	}
-	local accessoryinputs = {
-		accessoryinput1 = "",
-		accessoryinput2 = "",
-		accessoryinput3 = "",
-		accessoryinput4 = "",
-		accessoryinput5 = "",
-		accessoryinput6 = "",
-
-	}
-
-	if textboxes.textbox1.Text ~= "" then
-		accessoryinputs.accessoryinput1 = textboxes.textbox1.Text
-		local character = game.Players.LocalPlayer.Character
-		local item = character:FindFirstChild(accessoryinputs.accessoryinput1)
-		if item and item:IsA("Accessory") then
-			accessoryinputs.accessoryinput1 = textboxes.textbox1.Text
-		else
-			accessoryinputs.accessoryinput1 = "nil"
-			if ExecuteText_10.Text == "Error! (See error after 2 seconds)" == false then
+	for _,v in pairs(textboxes) do
+		if v.Text ~= "" then
+			local char = game.Players.LocalPlayer.Character
+			if char:FindFirstChild(v.Text) then
+				if char:FindFirstChild(v.Text):IsA("Accessory") then
+					if inputs <= 6 then
+						table.insert(input,v.Text)
+						inputs = inputs + 1
+					end
+				end
+			elseif char:FindFirstChild(v.Text) == nil then
+				input = {}
+				inputs = 0
+				ExecuteText_10.Text = "Error! (See error after 2 seconds)"
+				wait(0.333333)
+				ExecuteText_10.Text = "Execute (Invalid accessories!)"
+			end
+		elseif v.Text == "" then
 			ExecuteText_10.Text = "Error! (See error after 2 seconds)"
-			wait(0.333333333)
-			ExecuteText_10.Text = "Execute ("..accessoryinputs.accessoryinput1..", "..accessoryinputs.accessoryinput2..", "..accessoryinputs.accessoryinput3..", "..accessoryinputs.accessoryinput4..", "..accessoryinputs.accessoryinput5..", "..accessoryinputs.accessoryinput6..")"
+			wait(0.333333)
+			if (next(input) == nil)then
+				input = {}
+				inputs = 0
+				ExecuteText_10.Text = "Execute (Provide valid accessories in the text boxes!)"
+			elseif input[1] == nil or input[2] == nil or input[3] == nil or input[4] == nil or input[5] == nil or input[6] == nil then
+				if textboxes[1].Text ~= "" or textboxes[2].Text ~= "" or textboxes[3].Text ~= "" or textboxes[4].Text ~= "" or textboxes[5].Text ~= "" or textboxes[6].Text ~= "" or v.Text ~= "" then
+					input = {}
+					inputs = 0
+					ExecuteText_10.Text = "Execute (Invalid accessory/accessories!)"
+				else
+					input = {}
+					inputs = 0
+					ExecuteText_10.Text = "Execute (Provide more accessories in the text boxes!)"
+				end
 			end
 		end
-	elseif textboxes.textbox1.Text == "" then
-		accessoryinputs.accessoryinput1 = "nil"
-			if ExecuteText_10.Text == "Error! (See error after 2 seconds)" == false then
-			ExecuteText_10.Text = "Error! (See error after 2 seconds)"
-			wait(0.333333333)
-			ExecuteText_10.Text = "Execute ("..accessoryinputs.accessoryinput1..", "..accessoryinputs.accessoryinput2..", "..accessoryinputs.accessoryinput3..", "..accessoryinputs.accessoryinput4..", "..accessoryinputs.accessoryinput5..", "..accessoryinputs.accessoryinput6..")"
-			end
-	end
-	if textboxes.textbox2.Text ~= "" then
-		accessoryinputs.accessoryinput2 = textboxes.textbox2.Text
-		local character = game.Players.LocalPlayer.Character
-		local item = character:FindFirstChild(accessoryinputs.accessoryinput2)
-		if item and item:IsA("Accessory") then
-			accessoryinputs.accessoryinput2 = textboxes.textbox2.Text
-		else
-			accessoryinputs.accessoryinput2 = "nil"
-			if ExecuteText_10.Text == "Error! (See error after 2 seconds)" == false then
-			ExecuteText_10.Text = "Error! (See error after 2 seconds)"
-			wait(0.333333333)
-			ExecuteText_10.Text = "Execute ("..accessoryinputs.accessoryinput1..", "..accessoryinputs.accessoryinput2..", "..accessoryinputs.accessoryinput3..", "..accessoryinputs.accessoryinput4..", "..accessoryinputs.accessoryinput5..", "..accessoryinputs.accessoryinput6..")"
-			end
-		end
-	elseif textboxes.textbox2.Text == "" then
-		accessoryinputs.accessoryinput2 = "nil"
-			if ExecuteText_10.Text == "Error! (See error after 2 seconds)" == false then
-			ExecuteText_10.Text = "Error! (See error after 2 seconds)"
-			wait(0.333333333)
-			ExecuteText_10.Text = "Execute ("..accessoryinputs.accessoryinput1..", "..accessoryinputs.accessoryinput2..", "..accessoryinputs.accessoryinput3..", "..accessoryinputs.accessoryinput4..", "..accessoryinputs.accessoryinput5..", "..accessoryinputs.accessoryinput6..")"
-			end
-	end
-	if textboxes.textbox3.Text ~= "" then
-		accessoryinputs.accessoryinput3 = textboxes.textbox3.Text
-		local character = game.Players.LocalPlayer.Character
-		local item = character:FindFirstChild(accessoryinputs.accessoryinput3)
-		if item and item:IsA("Accessory") then
-			accessoryinputs.accessoryinput3 = textboxes.textbox3.Text
-		else
-			accessoryinputs.accessoryinput3 = "nil"
-			if ExecuteText_10.Text == "Error! (See error after 2 seconds)" == false then
-			ExecuteText_10.Text = "Error! (See error after 2 seconds)"
-			wait(0.333333333)
-			ExecuteText_10.Text = "Execute ("..accessoryinputs.accessoryinput1..", "..accessoryinputs.accessoryinput2..", "..accessoryinputs.accessoryinput3..", "..accessoryinputs.accessoryinput4..", "..accessoryinputs.accessoryinput5..", "..accessoryinputs.accessoryinput6..")"
-			end
-		end
-	elseif textboxes.textbox3.Text == "" then
-		accessoryinputs.accessoryinput3 = "nil"
-			if ExecuteText_10.Text == "Error! (See error after 2 seconds)" == false then
-			ExecuteText_10.Text = "Error! (See error after 2 seconds)"
-			wait(0.333333333)
-			ExecuteText_10.Text = "Execute ("..accessoryinputs.accessoryinput1..", "..accessoryinputs.accessoryinput2..", "..accessoryinputs.accessoryinput3..", "..accessoryinputs.accessoryinput4..", "..accessoryinputs.accessoryinput5..", "..accessoryinputs.accessoryinput6..")"
-			end
-	end
-	if textboxes.textbox4.Text ~= "" then
-		accessoryinputs.accessoryinput4 = textboxes.textbox4.Text
-		local character = game.Players.LocalPlayer.Character
-		local item = character:FindFirstChild(accessoryinputs.accessoryinput4)
-		if item and item:IsA("Accessory") then
-			accessoryinputs.accessoryinput4 = textboxes.textbox4.Text
-		else
-			accessoryinputs.accessoryinput4 = "nil"
-			if ExecuteText_10.Text == "Error! (See error after 2 seconds)" == false then
-			ExecuteText_10.Text = "Error! (See error after 2 seconds)"
-			wait(0.333333333)
-			ExecuteText_10.Text = "Execute ("..accessoryinputs.accessoryinput1..", "..accessoryinputs.accessoryinput2..", "..accessoryinputs.accessoryinput3..", "..accessoryinputs.accessoryinput4..", "..accessoryinputs.accessoryinput5..", "..accessoryinputs.accessoryinput6..")"
-			end
-		end
-	elseif textboxes.textbox4.Text == "" then
-		accessoryinputs.accessoryinput4 = "nil"
-			if ExecuteText_10.Text == "Error! (See error after 2 seconds)" == false then
-			ExecuteText_10.Text = "Error! (See error after 2 seconds)"
-			wait(0.333333333)
-			ExecuteText_10.Text = "Execute ("..accessoryinputs.accessoryinput1..", "..accessoryinputs.accessoryinput2..", "..accessoryinputs.accessoryinput3..", "..accessoryinputs.accessoryinput4..", "..accessoryinputs.accessoryinput5..", "..accessoryinputs.accessoryinput6..")"
-			end
 	end
 
-	if textboxes.textbox5.Text ~= "" then
-		accessoryinputs.accessoryinput5 = textboxes.textbox5.Text
-		local character = game.Players.LocalPlayer.Character
-		local item = character:FindFirstChild(accessoryinputs.accessoryinput5)
-		if item and item:IsA("Accessory") then
-			accessoryinputs.accessoryinput5 = textboxes.textbox5.Text
-		else
-			accessoryinputs.accessoryinput5 = "nil"
-			if ExecuteText_10.Text == "Error! (See error after 2 seconds)" == false then
-			ExecuteText_10.Text = "Error! (See error after 2 seconds)"
-			wait(0.333333333)
-			ExecuteText_10.Text = "Execute ("..accessoryinputs.accessoryinput1..", "..accessoryinputs.accessoryinput2..", "..accessoryinputs.accessoryinput3..", "..accessoryinputs.accessoryinput4..", "..accessoryinputs.accessoryinput5..", "..accessoryinputs.accessoryinput6..")"
-			end
-		end
-	elseif textboxes.textbox5.Text == "" then
-		accessoryinputs.accessoryinput5 = "nil"
-			if ExecuteText_10.Text == "Error! (See error after 2 seconds)" == false then
-			ExecuteText_10.Text = "Error! (See error after 2 seconds)"
-			wait(0.333333333)
-			ExecuteText_10.Text = "Execute ("..accessoryinputs.accessoryinput1..", "..accessoryinputs.accessoryinput2..", "..accessoryinputs.accessoryinput3..", "..accessoryinputs.accessoryinput4..", "..accessoryinputs.accessoryinput5..", "..accessoryinputs.accessoryinput6..")"
-			end
-	end
-
-	if textboxes.textbox6.Text ~= "" then
-		accessoryinputs.accessoryinput6 = textboxes.textbox6.Text
-		local character = game.Players.LocalPlayer.Character
-		local item = character:FindFirstChild(accessoryinputs.accessoryinput6)
-		if item and item:IsA("Accessory") then
-			accessoryinputs.accessoryinput6 = textboxes.textbox5.Text
-		else
-			accessoryinputs.accessoryinput6 = "nil"
-			if ExecuteText_10.Text == "Error! (See error after 2 seconds)" == false then
-			ExecuteText_10.Text = "Error! (See error after 2 seconds)"
-			wait(0.333333333)
-			ExecuteText_10.Text = "Execute ("..accessoryinputs.accessoryinput1..", "..accessoryinputs.accessoryinput2..", "..accessoryinputs.accessoryinput3..", "..accessoryinputs.accessoryinput4..", "..accessoryinputs.accessoryinput5..", "..accessoryinputs.accessoryinput6..")"
-			end
-		end
-	elseif textboxes.textbox6.Text == "" then
-		accessoryinputs.accessoryinput6 = "nil"
-			if ExecuteText_10.Text == "Error! (See error after 2 seconds)" == false then
-			ExecuteText_10.Text = "Error! (See error after 2 seconds)"
-			wait(0.333333333)
-			ExecuteText_10.Text = "Execute ("..accessoryinputs.accessoryinput1..", "..accessoryinputs.accessoryinput2..", "..accessoryinputs.accessoryinput3..", "..accessoryinputs.accessoryinput4..", "..accessoryinputs.accessoryinput5..", "..accessoryinputs.accessoryinput6..")"
-			end
-	end
-
-
-	
-	if accessoryinputs[1] == "nil" or "" and accessoryinputs[2] == "nil" or "" and accessoryinputs[3] == "nil" or "" and accessoryinputs[4] == "nil" or "" and accessoryinputs[5] == "nil" or "" and accessoryinputs[6] == "nil" or "" and == false then
-			--script
-			game:GetService("RunService").RenderStepped:Connect(function()
+	if inputs == 6 then
+		game:GetService("RunService").RenderStepped:Connect(function()
     setsimulationradius(math.huge)
 end)
 HumanDied = false
@@ -11942,7 +11835,7 @@ for _,v in pairs(Char:GetChildren()) do
 end
 
 local LWP1 = WingPiece:Clone();
-if Char:FindFirstChild(accessoryinputs.accessoryinput1) then
+if Char:FindFirstChild(input[1]) and (input[1] == "MeshPartAccessory" == false) then
 	for _,v in pairs(LWP1:GetChildren()) do
 		if v:IsA("BasePart") then
 			v.Transparency = 1
@@ -11951,7 +11844,23 @@ if Char:FindFirstChild(accessoryinputs.accessoryinput1) then
 	local athp = Instance.new("Attachment",LWP1.PrimaryPart)
 	local atho = Instance.new("Attachment",LWP1.PrimaryPart)
 
-	local HatChoice = Char:FindFirstChild(accessoryinputs.accessoryinput1)
+	local HatChoice = Char:FindFirstChild(input[1])
+	HatChoice.Handle:FindFirstChildOfClass("AlignPosition").Attachment1 = athp
+	HatChoice.Handle:FindFirstChildOfClass("AlignOrientation").Attachment1 = atho
+
+	athp.Position = Vector3.new(0,-2,0)
+	atho.Rotation = Vector3.new(0,0,45)
+	table.remove(MPASword,1)
+	elseif Char:FindFirstChild(input[1]) and input[1] == "MeshPartAccessory"  then
+		for _,v in pairs(LWP1:GetChildren()) do
+		if v:IsA("BasePart") then
+			v.Transparency = 1
+		end
+	end
+	local athp = Instance.new("Attachment",LWP1.PrimaryPart)
+	local atho = Instance.new("Attachment",LWP1.PrimaryPart)
+	
+        local HatChoice = MPASword[1]
 	HatChoice.Handle:FindFirstChildOfClass("AlignPosition").Attachment1 = athp
 	HatChoice.Handle:FindFirstChildOfClass("AlignOrientation").Attachment1 = atho
 
@@ -11961,7 +11870,7 @@ if Char:FindFirstChild(accessoryinputs.accessoryinput1) then
 end
 LWP1.Parent = leftWing
 local LWP2 = WingPiece:Clone();
-if Char:FindFirstChild(accessoryinputs.accessoryinput2) then
+if Char:FindFirstChild(input[2]) and (input[2] == "MeshPartAccessory" == false) then
 	for _,v in pairs(LWP2:GetChildren()) do
 		if v:IsA("BasePart") then
 			v.Transparency = 1
@@ -11970,7 +11879,23 @@ if Char:FindFirstChild(accessoryinputs.accessoryinput2) then
 	local athp = Instance.new("Attachment",LWP2.PrimaryPart)
 	local atho = Instance.new("Attachment",LWP2.PrimaryPart)
 
-	local HatChoice = Char:FindFirstChild(accessoryinputs.accessoryinput2)
+	local HatChoice = Char:FindFirstChild(input[2])
+	HatChoice.Handle:FindFirstChildOfClass("AlignPosition").Attachment1 = athp
+	HatChoice.Handle:FindFirstChildOfClass("AlignOrientation").Attachment1 = atho
+
+	athp.Position = Vector3.new(0,-2,0)
+	atho.Rotation = Vector3.new(0,0,45)
+	table.remove(MPASword,1)
+	elseif Char:FindFirstChild(input[2]) and input[2] == "MeshPartAccessory" then
+		for _,v in pairs(LWP2:GetChildren()) do
+		if v:IsA("BasePart") then
+			v.Transparency = 1
+		end
+	end
+	local athp = Instance.new("Attachment",LWP2.PrimaryPart)
+	local atho = Instance.new("Attachment",LWP2.PrimaryPart)
+	
+        local HatChoice = MPASword[1]
 	HatChoice.Handle:FindFirstChildOfClass("AlignPosition").Attachment1 = athp
 	HatChoice.Handle:FindFirstChildOfClass("AlignOrientation").Attachment1 = atho
 
@@ -11980,7 +11905,7 @@ if Char:FindFirstChild(accessoryinputs.accessoryinput2) then
 end
 LWP2.Parent = leftWing
 local LWP3 = WingPiece:Clone();
-if Char:FindFirstChild(accessoryinputs.accessoryinput3) then
+if Char:FindFirstChild(input[3]) and (input[3] == "MeshPartAccessory" == false) then
 	for _,v in pairs(LWP3:GetChildren()) do
 		if v:IsA("BasePart") then
 			v.Transparency = 1
@@ -11989,16 +11914,33 @@ if Char:FindFirstChild(accessoryinputs.accessoryinput3) then
 	local athp = Instance.new("Attachment",LWP3.PrimaryPart)
 	local atho = Instance.new("Attachment",LWP3.PrimaryPart)
 
-	local HatChoice = Char:FindFirstChild(accessoryinputs.accessoryinput3)
+	local HatChoice = Char:FindFirstChild(input[3])
 	HatChoice.Handle:FindFirstChildOfClass("AlignPosition").Attachment1 = athp
 	HatChoice.Handle:FindFirstChildOfClass("AlignOrientation").Attachment1 = atho
 
-	athp.Position = Vector3.new(0,-1.75,0)
-	atho.Rotation = Vector3.new(0,0,48)
+	athp.Position = Vector3.new(0,-2,0)
+	atho.Rotation = Vector3.new(0,0,45)
+	table.remove(MPASword,1)
+	elseif Char:FindFirstChild(input[3]) and input[3] == "MeshPartAccessory" then
+		for _,v in pairs(LWP3:GetChildren()) do
+		if v:IsA("BasePart") then
+			v.Transparency = 1
+		end
+	end
+	local athp = Instance.new("Attachment",LWP3.PrimaryPart)
+	local atho = Instance.new("Attachment",LWP3.PrimaryPart)
+	
+        local HatChoice = MPASword[1]
+	HatChoice.Handle:FindFirstChildOfClass("AlignPosition").Attachment1 = athp
+	HatChoice.Handle:FindFirstChildOfClass("AlignOrientation").Attachment1 = atho
+
+	athp.Position = Vector3.new(0,-2,0)
+	atho.Rotation = Vector3.new(0,0,45)
+	table.remove(MPASword,1)
 end
 LWP3.Parent = leftWing
 local RWP1 = WingPiece:Clone();
-if Char:FindFirstChild(accessoryinputs.accessoryinput4) then
+if Char:FindFirstChild(input[4]) and (input[4] == "MeshPartAccessory" == false) then
 	for _,v in pairs(RWP1:GetChildren()) do
 		if v:IsA("BasePart") then
 			v.Transparency = 1
@@ -12007,7 +11949,23 @@ if Char:FindFirstChild(accessoryinputs.accessoryinput4) then
 	local athp = Instance.new("Attachment",RWP1.PrimaryPart)
 	local atho = Instance.new("Attachment",RWP1.PrimaryPart)
 
-	local HatChoice = Char:FindFirstChild(accessoryinputs.accessoryinput4)
+	local HatChoice = Char:FindFirstChild(input[4])
+	HatChoice.Handle:FindFirstChildOfClass("AlignPosition").Attachment1 = athp
+	HatChoice.Handle:FindFirstChildOfClass("AlignOrientation").Attachment1 = atho
+
+	athp.Position = Vector3.new(0,-2,0)
+	atho.Rotation = Vector3.new(0,0,45)
+	table.remove(MPASword,1)
+	elseif Char:FindFirstChild(input[4]) and input[4] == "MeshPartAccessory" then
+		for _,v in pairs(RWP1:GetChildren()) do
+		if v:IsA("BasePart") then
+			v.Transparency = 1
+		end
+	end
+	local athp = Instance.new("Attachment",RWP1.PrimaryPart)
+	local atho = Instance.new("Attachment",RWP1.PrimaryPart)
+	
+        local HatChoice = MPASword[1]
 	HatChoice.Handle:FindFirstChildOfClass("AlignPosition").Attachment1 = athp
 	HatChoice.Handle:FindFirstChildOfClass("AlignOrientation").Attachment1 = atho
 
@@ -12017,7 +11975,7 @@ if Char:FindFirstChild(accessoryinputs.accessoryinput4) then
 end
 RWP1.Parent = rightWing
 local RWP2 = WingPiece:Clone();
-if Char:FindFirstChild(accessoryinputs.accessoryinput5) then
+if Char:FindFirstChild(input[5]) and (input[5] == "MeshPartAccessory" == false) then
 	for _,v in pairs(RWP2:GetChildren()) do
 		if v:IsA("BasePart") then
 			v.Transparency = 1
@@ -12026,7 +11984,23 @@ if Char:FindFirstChild(accessoryinputs.accessoryinput5) then
 	local athp = Instance.new("Attachment",RWP2.PrimaryPart)
 	local atho = Instance.new("Attachment",RWP2.PrimaryPart)
 
-	local HatChoice = Char:FindFirstChild(accessoryinputs.accessoryinput5)
+	local HatChoice = Char:FindFirstChild(input[5])
+	HatChoice.Handle:FindFirstChildOfClass("AlignPosition").Attachment1 = athp
+	HatChoice.Handle:FindFirstChildOfClass("AlignOrientation").Attachment1 = atho
+
+	athp.Position = Vector3.new(0,-2,0)
+	atho.Rotation = Vector3.new(0,0,45)
+	table.remove(MPASword,1)
+	elseif Char:FindFirstChild(input[5]) and input[5] == "MeshPartAccessory" then
+		for _,v in pairs(RWP2:GetChildren()) do
+		if v:IsA("BasePart") then
+			v.Transparency = 1
+		end
+	end
+	local athp = Instance.new("Attachment",RWP2.PrimaryPart)
+	local atho = Instance.new("Attachment",RWP2.PrimaryPart)
+	
+        local HatChoice = MPASword[5]
 	HatChoice.Handle:FindFirstChildOfClass("AlignPosition").Attachment1 = athp
 	HatChoice.Handle:FindFirstChildOfClass("AlignOrientation").Attachment1 = atho
 
@@ -12036,7 +12010,7 @@ if Char:FindFirstChild(accessoryinputs.accessoryinput5) then
 end
 RWP2.Parent = rightWing
 local RWP3 = WingPiece:Clone();
-if Char:FindFirstChild(accessoryinputs.accessoryinput6) then
+if Char:FindFirstChild(input[6]) and (input[6] == "MeshPartAccessory" == false) then
 	for _,v in pairs(RWP3:GetChildren()) do
 		if v:IsA("BasePart") then
 			v.Transparency = 1
@@ -12045,12 +12019,29 @@ if Char:FindFirstChild(accessoryinputs.accessoryinput6) then
 	local athp = Instance.new("Attachment",RWP3.PrimaryPart)
 	local atho = Instance.new("Attachment",RWP3.PrimaryPart)
 
-	local HatChoice = Char:FindFirstChild(accessoryinputs.accessoryinput6)
+	local HatChoice = Char:FindFirstChild(input[6])
 	HatChoice.Handle:FindFirstChildOfClass("AlignPosition").Attachment1 = athp
 	HatChoice.Handle:FindFirstChildOfClass("AlignOrientation").Attachment1 = atho
 
-	athp.Position = Vector3.new(0,-1.75,0)
-	atho.Rotation = Vector3.new(0,0,48)
+	athp.Position = Vector3.new(0,-2,0)
+	atho.Rotation = Vector3.new(0,0,45)
+	table.remove(MPASword,5)
+	elseif Char:FindFirstChild(input[6]) and input[6] == "MeshPartAccessory" then
+		for _,v in pairs(RWP3:GetChildren()) do
+		if v:IsA("BasePart") then
+			v.Transparency = 1
+		end
+	end
+	local athp = Instance.new("Attachment",RWP3.PrimaryPart)
+	local atho = Instance.new("Attachment",RWP3.PrimaryPart)
+	
+        local HatChoice = MPASword[1]
+	HatChoice.Handle:FindFirstChildOfClass("AlignPosition").Attachment1 = athp
+	HatChoice.Handle:FindFirstChildOfClass("AlignOrientation").Attachment1 = atho
+
+	athp.Position = Vector3.new(0,-2,0)
+	atho.Rotation = Vector3.new(0,0,45)
+	table.remove(MPASword,1)
 end
 RWP3.Parent = rightWing
 local LWP1W=Weld(LWP1.PrimaryPart,Torso,CF.N(2,-2,-1)*CF.A(0,0,0))
@@ -13198,11 +13189,7 @@ while true do
 		}
 	end
 end
-	ExecuteText_10.Text = "Executed!"
-	wait(2)
-	ExecuteText_10.Text = "Execute"		
-end
-end
+	end
 end)
 
 BG_10.Name = "BG"
