@@ -13189,6 +13189,13 @@ while true do
 			hue;
 		}
 	end
+	game.Players.LocalPlayer.Character.Humanoid.Died:Connect(function()
+	for _,v in pairs(Char:GetChildren()) do
+	if v:IsA("Accessory") and v.Name:find("MeshPartAccessory") and v.Handle.Size == Vector3.new(4,4,1) then
+		table.insert(MPASword,v)
+	end
+end
+	end
 end
 	end
 	ExecuteText_2.Text = "Executed!"
